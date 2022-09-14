@@ -40,7 +40,7 @@
                     <div class="text-center">
                         <h1 class="mx-auto my-0 text-uppercase">BetterBooks</h1>
                         <h2 class="text-white-50 mx-auto mt-2 mb-5">Sebuah toko buku yang menjual e-book dan video tutorial secara online.</h2>
-                        <a class="btn btn-primary" href="https://www.youtube.com/watch?v=7sckIZeiDIc">Registrasi</a>
+                        <a class="btn btn-primary" href="/login">Registrasi</a>
                     </div>
                 </div>
             </div>
