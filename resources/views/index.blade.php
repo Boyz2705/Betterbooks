@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 	<html lang="en">
 	<head>
-		<title>PWBF</title>
+		<title>PWBF Bookstore</title>
 		<link rel="icon" type="image/x-icon" href="https://spesialis1.ikf.fk.unair.ac.id/wp-content/uploads/2019/02/logo-unair.png" />
 		<meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
