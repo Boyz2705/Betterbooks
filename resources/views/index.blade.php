@@ -15,8 +15,7 @@
 	    <link rel="stylesheet" type="text/css" href="css/vendor.css">
 	    <link rel="stylesheet" type="text/css" href="css/styled.css">
 
-		<!-- script
-		================================================== -->
+		<!-- script-->
 		<script src="js/modernizr.js"></script>
 
 	</head>
