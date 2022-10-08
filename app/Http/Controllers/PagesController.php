@@ -19,6 +19,6 @@ class PagesController extends Controller
     }
 
     function welcome(){
-        return view('welcome');
+        return view('/welcome');
     }
 }
