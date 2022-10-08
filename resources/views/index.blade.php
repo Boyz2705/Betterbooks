@@ -30,23 +30,6 @@
 		<div class="container">
 			<div class="inner-content">
 				<div class="grid">					
-					<div class="social-links">
-						<ul>
-							<li>
-								<a href="#"><i class="icon icon-facebook"></i></a>
-							</li>
-							<li>
-								<a href="#"><i class="icon icon-twitter"></i></a>
-							</li>
-							<li>
-								<a href="#"><i class="icon icon-youtube-play"></i></a>
-							</li>
-							<li>
-								<a href="#"><i class="icon icon-behance-square"></i></a>
-							</li>
-						</ul>
-					</div><!--social-links-->
-
 					<div class="right-element">
 						<div class="grid">
 							<div class="user-account for-buy">
@@ -59,7 +42,7 @@
 							<div class="cart for-buy">
 								<a href="#">
 								<i class="icon icon-clipboard"></i>
-								<span>Cart:(0 $)</span>
+								<span>Cart:(0$)</span>
 								</a>
 							</div>
 
@@ -656,25 +639,9 @@
 		<div class="row">
 			<div class="inner-content">
 				<div class="copyright">
-					<div class="grid">
+					{{-- <div class="grid">
 						<p>© 2021 All rights reserved. A free Template by <a href="https://www.templatesjungle.com/">Templates Jungle</a></p>
-						<div class="social-links">
-							<ul>
-								<li>
-									<a href="#"><i class="icon icon-facebook"></i></a>
-								</li>
-								<li>
-									<a href="#"><i class="icon icon-twitter"></i></a>
-								</li>
-								<li>
-									<a href="#"><i class="icon icon-youtube-play"></i></a>
-								</li>
-								<li>
-									<a href="#"><i class="icon icon-behance-square"></i></a>
-								</li>
-							</ul>
-						</div>
-					</div>
+					</div> --}}
 				</div><!--grid-->
 			</div><!--footer-bottom-content-->			
 		</div>
