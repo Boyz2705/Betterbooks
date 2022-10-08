@@ -56,7 +56,7 @@
 							<span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
 							</div>
 							<div class="form-group">
-								<a class="d-flex justify-content-center align-items-center text-light form-control btn btn-primary submit px-3" href="/index">Login</a>
+								<a class="d-flex justify-content-center align-items-center text-dark form-control btn btn-primary submit px-3" href="/index">Login</a>
 							</div>
 							<div class="form-group d-md-flex">
 								<div class="w-50">
@@ -75,7 +75,7 @@
 			</div>
 			<div class="d-flex flex-column justify-content-center align-items-center">
 	          <p class="text-center text-light">&mdash; Don't have any account? &mdash;</p>
-			  <a class="text-center text-light" href="/register">Sign Up here</a>
+			  <a class="text-center text-light" href="/register">Register here</a>
 		    </div>
 		</div>
 	</section>
