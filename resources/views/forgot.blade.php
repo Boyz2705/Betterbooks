@@ -14,6 +14,18 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styleSignUp.css" rel="stylesheet" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.8/dist/sweetalert2.all.min.js"></script>
+		<style type="text/css">
+			button {
+				padding: 1em;
+				background-color: #1560bd;
+				color: #ffffff;
+				border-radius: 0.2em;
+				border-style: none;
+				cursor: pointer;
+			}
+		</style>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -27,58 +39,49 @@
             </div>
         </nav> --}}
 		
-        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
-
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	
-	<link rel="stylesheet" href="css/styleSignUp.css">
-
-	</head>
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/styleSignUp.css">
 	<body class="img js-fullheight" style="background-image: url(images/bg.jpg);">
 	<section class="ftco-section" style="height: 100vh">
 		<a class="btn text-light ms-6" href="/">Home</a>
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-md-6 text-center mb-5 mt-5">
-					<h2 class="heading-section">Login</h2>
+					<h2 class="heading-section">Input your e-mail</h2>
 				</div>
 			</div>
 			<div class="row justify-content-center">
 				<div class="col-md-6 col-lg-4">
 					<div class="login-wrap p-0">
-		      			<h3 class="mb-4 text-center">Have an account?</h3>
-		      			<form action="#" class="signin-form">
+		      			<form action="#" class="forgot-form">
 							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Username" required>
+								<input type="text" class="form-control" placeholder="E-Mail">
 							</div>
-							<div class="form-group">
-							<input id="password-field" type="password" class="form-control" placeholder="Password" required>
-							<span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
-							</div>
-							<div class="form-group">
-								<a class="d-flex justify-content-center align-items-center text-light form-control" href="/index">Login</a>
-							</div>
-							<div class="form-group d-md-flex">
-								<div class="w-50">
-									<label class="checkbox-wrap checkbox-primary">Remember Me
-										<input type="checkbox" checked>
-										<span class="checkmark"></span>
-									</label>
-								</div>
-								<div class="w-50 text-md-right">
-									<a href="/forgot" style="color: #fff">Forgot Password</a>
-								</div>
-							</div>
+							<main>
+								<button id="showAlert" class="d-flex justify-content-center align-items-center text-light form-control" href="">Submit</button>
+							</main>
 						</form>
 					</div>
 				</div>
 			</div>
-			<div class="d-flex flex-column justify-content-center align-items-center">
-	          <p class="text-center text-light">&mdash; Don't have any account? &mdash;</p>
-			  <a class="text-center text-light" href="/register">Register here</a>
-		    </div>
 		</div>
 	</section>
+
+	
+<body>
+    <main>
+        <button >Click Me</button>
+    </main>
+</body>
+<script>
+    $("#showAlert").click(function(){
+        Swal.fire(
+            'Wait for our customer service contacts you',
+        )
+    });
+</script>
+
 
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.js"></script>

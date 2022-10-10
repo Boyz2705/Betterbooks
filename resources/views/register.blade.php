@@ -25,7 +25,7 @@
 	</head>
 	<body class="img js-fullheight" style="background-image: url(images/bg.jpg);">
 	<section class="ftco-section" style="height: 100vh">
-		<a class="btn text-light px-1 px-lg-2" href="/">Home</a>
+		<a class="btn text-light ms-6" href="/">Home</a>
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-md-6 text-center mb-5">
@@ -51,7 +51,7 @@
 							<span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
 							</div>
 							<div class="form-group">
-								<a class="d-flex justify-content-center align-items-center text-dark form-control btn btn-primary submit px-3" href="/index">Register</a>
+								<a class="d-flex justify-content-center align-items-center text-light form-control" href="/index">Register</a>
 							</div>
 						</form>
 					</div>

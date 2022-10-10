@@ -59,7 +59,7 @@
 					<a href="#" class="btn-outline-accent btn-accent-arrow">Read More<i class="icon icon-ns-arrow-right"></i></a>
 				</div>
 			</div><!--banner-content--> 
-			<img src="images/main-banner1.jpg" alt="banner" class="banner-image">
+			<a href=""><img src="images/main-banner1.jpg" alt="banner" class="banner-ima</a>ge">
 		</div><!--slider-item-->
 
 		<div class="slider-item">
@@ -70,7 +70,7 @@
 					<a href="#" class="btn-outline-accent btn-accent-arrow">Read More<i class="icon icon-ns-arrow-right"></i></a>
 				</div>
 			</div><!--banner-content-->
-			<img src="images/main-banner2.jpg" alt="banner" class="banner-image"> 
+			<a href=""><img src="images/main-banner2.jpg" alt="banner" class="banner-ima</a>ge"> 
 		</div><!--slider-item-->
 	</div><!--slider-->
 		
@@ -79,7 +79,7 @@
 	</button>
 </section> --}}
 
-<section id="featured-books" class="bookshelf">
+{{-- <section id="featured-books" class="bookshelf">
 	<div class="container">
 		<div class="row">
 			<div class="inner-content">
@@ -96,7 +96,7 @@
 					
 					@foreach ($details as $detail)
 					<figure class="product-style">
-						<img src="images/{{ $detail["image"] }}" alt="Books" class="product-item">
+						<a href=""><img src="images/{{ $detail["image"] }}" alt="Books" class="produ</a>ct-item">
 						<button class="add-to-cart"><a href="/detailProduct/{{ $detail["slug"] }}" style="color: #fff">Add to Cart</a></button>
 						<figcaption>
 							<h3>{{ $detail["title"] }}</h3>
@@ -116,7 +116,7 @@
 			</div><!--inner-content-->
 		</div>
 	</div>
-</section>
+</section> --}}
 
 <section id="best-selling" class="leaf-pattern-overlay">
 	<div class="corner-pattern-overlay"></div>
@@ -126,7 +126,7 @@
 			<div class="product-element">
 				<div class="grid">
 					<figure class="products-thumb">
-						<img src="images/single-image.jpg" alt="book" class="single-image">
+						<a href=""><img src="images/single-image.jpg" alt="book" class="single-image"></a>
 					</figure>
 					<div class="product-entry">
 						<h2 class="section-title divider">Best Selling Book</h2>
@@ -137,7 +137,7 @@
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet, libero ipsum enim pharetra hac.</p>
 							<div class="item-price">$ 45.00</div>
 							<div class="btn-wrap">
-								<a href="#" class="btn-accent-arrow">shop it now <i class="icon icon-ns-arrow-right"></i></a>
+								<a href="/shop-single" class="btn-accent-arrow">shop it now <i class="icon icon-ns-arrow-right"></i></a>
 							</div>
 						</div><!--description-->
 
@@ -175,8 +175,8 @@
 			  	<div class="grid">
 
 				  	<figure class="product-style">
-						<img src="images/tab-item1.jpg" alt="Books" class="product-item">
-						<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+						<a href="/book1"><img src="images/tab-item1.jpg" alt="Books" class="product-item"></a>
+						{{-- <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button> --}}
 						<figcaption>
 							<h3>Portrait photography</h3>
 							<p>Adam Silber</p>
@@ -185,8 +185,8 @@
 					</figure>
 
 				  	<figure class="product-style">
-						<img src="images/tab-item2.jpg" alt="Books" class="product-item">
-						<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+						<a href=""><img src="images/tab-item2.jpg" alt="Books" class="product-item"></a>
+						{{-- <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button> --}}
 						<figcaption>
 							<h3>Once upon a time</h3>
 							<p>Klien Marry</p>
@@ -195,8 +195,8 @@
 					</figure>
 
 				  	<figure class="product-style">
-						<img src="images/tab-item3.jpg" alt="Books" class="product-item">
-						<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+						<a href=""><img src="images/tab-item3.jpg" alt="Books" class="product-item"></a>
+						{{-- <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button> --}}
 						<figcaption>
 							<h3>Tips of simple lifestyle</h3>
 							<p>Bratt Smith</p>
@@ -205,8 +205,8 @@
 					</figure>
 
 				  	<figure class="product-style">
-						<img src="images/tab-item4.jpg" alt="Books" class="product-item">
-						<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+						<a href=""><img src="images/tab-item4.jpg" alt="Books" class="product-item"></a>
+						{{-- <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button> --}}
 						<figcaption>
 							<h3>Just felt from outside</h3>
 							<p>Nicole Wilson</p>
@@ -215,8 +215,8 @@
 					</figure>
 
 				  	<figure class="product-style">
-						<img src="images/tab-item5.jpg" alt="Books" class="product-item">
-						<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+						<a href=""><img src="images/tab-item5.jpg" alt="Books" class="product-item"></a>
+						{{-- <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button> --}}
 						<figcaption>
 							<h3>Peaceful Enlightment</h3>
 							<p>Marmik Lama</p>
@@ -225,8 +225,8 @@
 					</figure>
 
 				  	<figure class="product-style">
-						<img src="images/tab-item6.jpg" alt="Books" class="product-item">
-						<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+						<a href=""><img src="images/tab-item6.jpg" alt="Books" class="product-item"></a>
+						{{-- <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button> --}}
 						<figcaption>
 							<h3>Great travel at desert</h3>
 							<p>Sanchit Howdy</p>
@@ -235,8 +235,8 @@
 					</figure>
 
 				  	<figure class="product-style">
-						<img src="images/tab-item7.jpg" alt="Books" class="product-item">
-						<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+						<a href=""><img src="images/tab-item7.jpg" alt="Books" class="product-item"></a>
+						{{-- <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button> --}}
 						<figcaption>
 							<h3>Life among the pirates</h3>
 							<p>Armor Ramsey</p>
@@ -245,8 +245,8 @@
 					</figure>
 
 				  	<figure class="product-style">
-						<img src="images/tab-item8.jpg" alt="Books" class="product-item">
-						<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+						<a href=""><img src="images/tab-item8.jpg" alt="Books" class="product-item"></a>
+						{{-- <button type="button" class="add-to-cart" data-product-tile="add-to-cart" href="/shop-single">Add to Cart</button> --}}
 						<figcaption>
 							<h3>Simple way of piece life</h3>
 							<p>Armor Ramsey</p>
@@ -260,8 +260,8 @@
 			  <div id="business" data-tab-content>
 			  	<div class="grid">
 				  	<figure class="product-style">
-						<img src="images/tab-item2.jpg" alt="Books" class="product-item">
-						<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+						<a href=""><img src="images/tab-item2.jpg" alt="Books" class="product-item"></a>
+						{{-- <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button> --}}
 						<figcaption>
 							<h3>Peaceful Enlightment</h3>
 							<p>Marmik Lama</p>
@@ -270,8 +270,8 @@
 					</figure>
 
 				  	<figure class="product-style">
-						<img src="images/tab-item4.jpg" alt="Books" class="product-item">
-						<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+						<a href=""><img src="images/tab-item4.jpg" alt="Books" class="product-item"></a>
+						{{-- <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button> --}}
 						<figcaption>
 							<h3>Great travel at desert</h3>
 							<p>Sanchit Howdy</p>
@@ -280,8 +280,8 @@
 					</figure>
 
 				  	<figure class="product-style">
-						<img src="images/tab-item6.jpg" alt="Books" class="product-item">
-						<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+						<a href=""><img src="images/tab-item6.jpg" alt="Books" class="product-item"></a>
+						{{-- <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button> --}}
 						<figcaption>
 							<h3>Life among the pirates</h3>
 							<p>Armor Ramsey</p>
@@ -290,8 +290,8 @@
 					</figure>
 
 				  	<figure class="product-style">
-						<img src="images/tab-item8.jpg" alt="Books" class="product-item">
-						<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+						<a href=""><img src="images/tab-item8.jpg" alt="Books" class="product-item"></a>
+						{{-- <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button> --}}
 						<figcaption>
 							<h3>Simple way of piece life</h3>
 							<p>Armor Ramsey</p>
@@ -304,8 +304,8 @@
 			  <div id="technology" data-tab-content>
 			  	<div class="grid">
 				  	<figure class="product-style">
-						<img src="images/tab-item1.jpg" alt="Books" class="product-item">
-						<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+						<a href=""><img src="images/tab-item1.jpg" alt="Books" class="product-item"></a>
+						{{-- <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button> --}}
 						<figcaption>
 							<h3>Peaceful Enlightment</h3>
 							<p>Marmik Lama</p>
@@ -314,8 +314,8 @@
 					</figure>
 
 				  	<figure class="product-style">
-						<img src="images/tab-item3.jpg" alt="Books" class="product-item">
-						<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+						<a href=""><img src="images/tab-item3.jpg" alt="Books" class="product-item"></a>
+						{{-- <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button> --}}
 						<figcaption>
 							<h3>Great travel at desert</h3>
 							<p>Sanchit Howdy</p>
@@ -324,8 +324,8 @@
 					</figure>
 
 				  	<figure class="product-style">
-						<img src="images/tab-item5.jpg" alt="Books" class="product-item">
-						<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+						<a href=""><img src="images/tab-item5.jpg" alt="Books" class="product-item"></a>
+						{{-- <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button> --}}
 						<figcaption>
 							<h3>Life among the pirates</h3>
 							<p>Armor Ramsey</p>
@@ -334,8 +334,8 @@
 					</figure>
 
 				  	<figure class="product-style">
-						<img src="images/tab-item7.jpg" alt="Books" class="product-item">
-						<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+						<a href=""><img src="images/tab-item7.jpg" alt="Books" class="product-item"></a>
+						{{-- <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button> --}}
 						<figcaption>
 							<h3>Simple way of piece life</h3>
 							<p>Armor Ramsey</p>
@@ -348,8 +348,8 @@
 			  <div id="romantic" data-tab-content>
 			  	<div class="grid">
 		    	  <figure class="product-style">
-						<img src="images/tab-item1.jpg" alt="Books" class="product-item">
-						<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+						<a href=""><img src="images/tab-item1.jpg" alt="Books" class="product-item"></a>
+						{{-- <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button> --}}
 						<figcaption>
 							<h3>Peaceful Enlightment</h3>
 							<p>Marmik Lama</p>
@@ -358,8 +358,8 @@
 					</figure>
 
 				  	<figure class="product-style">
-						<img src="images/tab-item3.jpg" alt="Books" class="product-item">
-						<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+						<a href=""><img src="images/tab-item3.jpg" alt="Books" class="product-item"></a>
+						{{-- <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button> --}}
 						<figcaption>
 							<h3>Great travel at desert</h3>
 							<p>Sanchit Howdy</p>
@@ -368,8 +368,8 @@
 					</figure>
 
 				  	<figure class="product-style">
-						<img src="images/tab-item5.jpg" alt="Books" class="product-item">
-						<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+						<a href=""><img src="images/tab-item5.jpg" alt="Books" class="product-item"></a>
+						{{-- <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button> --}}
 						<figcaption>
 							<h3>Life among the pirates</h3>
 							<p>Armor Ramsey</p>
@@ -378,8 +378,8 @@
 					</figure>
 
 				  	<figure class="product-style">
-						<img src="images/tab-item7.jpg" alt="Books" class="product-item">
-						<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+						<a href=""><img src="images/tab-item7.jpg" alt="Books" class="product-item"></a>
+						{{-- <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button> --}}
 						<figcaption>
 							<h3>Simple way of piece life</h3>
 							<p>Armor Ramsey</p>
@@ -392,8 +392,8 @@
 			  <div id="adventure" data-tab-content>
 			  	<div class="grid">
 				  	<figure class="product-style">
-						<img src="images/tab-item5.jpg" alt="Books" class="product-item">
-						<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+						<a href=""><img src="images/tab-item5.jpg" alt="Books" class="product-item"></a>
+						{{-- <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button> --}}
 						<figcaption>
 							<h3>Life among the pirates</h3>
 							<p>Armor Ramsey</p>
@@ -402,8 +402,8 @@
 					</figure>
 
 				  	<figure class="product-style">
-						<img src="images/tab-item7.jpg" alt="Books" class="product-item">
-						<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+						<a href=""><img src="images/tab-item7.jpg" alt="Books" class="product-item"></a>
+						{{-- <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button> --}}
 						<figcaption>
 							<h3>Simple way of piece life</h3>
 							<p>Armor Ramsey</p>
@@ -416,8 +416,8 @@
 			  <div id="fictional" data-tab-content>
 			  	<div class="grid">
 				  	<figure class="product-style">
-						<img src="images/tab-item5.jpg" alt="Books" class="product-item">
-						<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+						<a href=""><img src="images/tab-item5.jpg" alt="Books" class="product-item"></a>
+						{{-- <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button> --}}
 						<figcaption>
 							<h3>Life among the pirates</h3>
 							<p>Armor Ramsey</p>
@@ -426,8 +426,8 @@
 					</figure>
 
 				  	<figure class="product-style">
-						<img src="images/tab-item7.jpg" alt="Books" class="product-item">
-						<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+						<a href=""><img src="images/tab-item7.jpg" alt="Books" class="product-item"></a>
+						{{-- <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button> --}}
 						<figcaption>
 							<h3>Simple way of piece life</h3>
 							<p>Armor Ramsey</p>
@@ -447,7 +447,7 @@
 	<div class="inner-content">
 		<h2 class="section-title divider">Quote of the day</h2>
 		<blockquote data-aos="fade-up">
-			<q>“The more that you read, the more things you will know. The more that you learn, the more places you’ll go.”</q>
+			<q>“The more that you read, the more things you will know. The more that you learn, the more places you'll go.”</q>
 			<div class="author-name">Dr. Seuss</div>			
 		</blockquote>
 	</div>		

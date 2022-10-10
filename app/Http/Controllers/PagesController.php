@@ -15,19 +15,39 @@ class PagesController extends Controller
         return view('register');
     }
 
-    function index(){
-        return view('index', [
-            "details" => BooksDetail::all()
-        ]);
-    }
+    // function index(){
+    //     return view('index', [
+    //         "details" => BooksDetail::all()
+    //     ]);
+    // }
 
     function welcome(){
         return view('/welcome');
     }
 
-    function show($slug){
-        return view('detailProduct', [
-            "booksdetail" => BooksDetail::find($slug)
-        ]);
+    // function show($slug){
+    //     return view('detailProduct', [
+    //         "booksdetail" => BooksDetail::find($slug)
+    //     ]);
+    // }
+
+    function forgot(){
+        return view('forgot');
+    }
+
+    function index(){
+        return view('index');
+    }
+
+    function book1Disp(){
+        return view('books/book1');
+    }
+
+    function formBuy(){
+        return view('form');
+    }
+
+    function accPage(){
+        return view('account');
     }
 }
