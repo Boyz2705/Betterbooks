@@ -11,9 +11,7 @@
 	    <meta name="author" content="">
 	    <meta name="keywords" content="">
 	    <meta name="description" content="">
-	    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-	    <link rel="stylesheet" type="text/css" href="icomoon/icomoon.css">
-	    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+		<link rel="stylesheet" type="text/css" href="css/vendor.css">
 	    <link rel="stylesheet" type="text/css" href="css/styles.css">
 
 		<!-- script-->
@@ -24,9 +22,7 @@
     
     @include('partials.header')
 
-<section>
-    <div class="product-list" data-aos="fade-up">
-        <div class="product-grid">
+        <div>
             <figure class="product-style">
                 <img src="images/{{ $booksdetail["image"] }}" alt="Books" class="product-item">
                 <button class="add-to-cart"><a href="/detailProduct/{{ $booksdetail["slug"] }}" style="color: #fff">Add to Cart</a></button>
@@ -37,8 +33,7 @@
                 </figcaption>
             </figure>
         </div>
-    </div>
-</section>
+
 
     <script src="js/jquery-1.11.0.min.js"></script>
 	<script src="js/slideNav.min.js"></script>

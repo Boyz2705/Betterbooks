@@ -18,6 +18,7 @@ Route::get('/','App\Http\Controllers\PagesController@welcome');
 Route::get('/index','App\Http\Controllers\PagesController@index');
 Route::get('/register','App\Http\Controllers\PagesController@register');
 Route::get('/login','App\Http\Controllers\PagesController@login');
+Route::get('/detailProduct/{slug}','App\Http\Controllers\PagesController@show');
 // Route::get('/login', function () {
 //     return view('login');
 // });
