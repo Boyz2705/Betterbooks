@@ -135,11 +135,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="social d-flex justify-content-center">
-                    <a class="mx-2" target="_blank" href="https://twitter.com/Unair_Official?t=s86yw6-xZ4ocbZ1BOOavYQ&s=35"><i class="fab fa-twitter"></i></a>
-                    <a class="mx-2" target="_blank" href="https://m.facebook.com/universitasairlangga/"><i class="fab fa-facebook-f"></i></a>
-                    <a class="mx-2" target="_blank" href="https://instagram.com/univ_airlangga?igshid=YmMyMTA2M2Y="><i class="fab fa-instagram"></i></a>
-                </div>
             </div>
         </section>
         <!-- Footer-->
