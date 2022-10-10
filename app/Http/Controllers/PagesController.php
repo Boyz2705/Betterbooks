@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\BooksDetail;
 
 class PagesController extends Controller
 {
@@ -15,10 +16,18 @@ class PagesController extends Controller
     }
 
     function index(){
-        return view('index');
+        return view('index', [
+            "details" => BooksDetail::all()
+        ]);
     }
 
     function welcome(){
         return view('/welcome');
+    }
+
+    function show($slug){
+        return view('detailProduct', [
+            "booksdetail" => BooksDetail::find($slug)
+        ]);
     }
 }

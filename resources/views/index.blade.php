@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 	<html lang="en">
 	<head>
-		<title>PWBF Bookstore</title>
+		<title>BetterBooks</title>
 		<link rel="icon" type="image/x-icon" href="https://spesialis1.ikf.fk.unair.ac.id/wp-content/uploads/2019/02/logo-unair.png" />
 		<meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +14,7 @@
 	    <link rel="stylesheet" type="text/css" href="css/normalize.css">
 	    <link rel="stylesheet" type="text/css" href="icomoon/icomoon.css">
 	    <link rel="stylesheet" type="text/css" href="css/vendor.css">
-	    <link rel="stylesheet" type="text/css" href="css/styled.css">
+	    <link rel="stylesheet" type="text/css" href="css/styles.css">
 
 		<!-- script-->
 		<script src="js/modernizr.js"></script>
@@ -23,78 +23,28 @@
 
 <body>
 
+<!-- Modal -->
+{{-- <div class="modal fade" id="books" role="dialog" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="books">Product Detail</h1>
+        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+		...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Add to Cart</button>
+        <button type="button" class="btn btn-primary">Buy Now</button>
+      </div>
+    </div>
+  </div>
+</div> --}}
+
 <!-- <div id="entire-wrapper"> -->
-
-<div id="header-wrap" data-aos="fade">
-	<div class="top-content">
-		<div class="container">
-			<div class="inner-content">
-				<div class="grid">					
-					<div class="right-element">
-						<div class="grid">
-							<div class="user-account for-buy">
-								<a href="#">
-								<i class="icon icon-user"></i>
-								<span>Account</span>
-								</a>
-							</div>
-
-							<div class="cart for-buy">
-								<a href="#">
-								<i class="icon icon-clipboard"></i>
-								<span>Cart:(0$)</span>
-								</a>
-							</div>
-
-							<div class="search-bar">
-								<a href="#" class="search-button search-toggle" data-selector="#header-wrap">
-									<i class="icon icon-search"></i>
-									<span>Search</span>
-								</a>
-								<form role="search" method="get" class="search-box">
-									<input class="search-field text search-input" placeholder="Search" type="search">
-								</form>
-							</div>
-						</div><!--grid-->
-					</div><!--top-right-->
-				</div><!--grid-->
-			</div>
-		</div>
-	</div><!--top-content-->
-
-	<header id="header">
-		<div class="container">
-			<div class="inner-content">
-				<div class="grid">
-					<div class="main-logo">
-						<a href="/"><img src="images/main-logo.png" alt="logo"></a>
-					</div>
-
-					<nav id="navbar">
-						<div class="main-menu">
-							<ul class="menu-list">
-								<li class="menu-item active"><a href="/" data-effect="Home">Home</a></li>
-								{{-- <li class="menu-item"><a href="#about" class="nav-link" data-effect="About">About</a></li>
-								<li class="menu-item"><a href="#pages" class="nav-link" data-effect="Pages">Pages</a></li>
-								<li class="menu-item"><a href="#shop" class="nav-link" data-effect="Shop">Shop</a></li>
-								<li class="menu-item"><a href="#articles" class="nav-link" data-effect="Articles">Articles</a></li>
-								<li class="menu-item"><a href="#contact" class="nav-link" data-effect="Contact">Contact</a></li> --}}
-							</ul>
-
-							<div class="hamburger">
-				                <span class="bar"></span>
-				                <span class="bar"></span>
-				                <span class="bar"></span>
-				            </div>
-
-						</div>
-					</nav>
-				</div>
-			</div>
-		</div>
-	</header>
-		
-</div><!--header-wrap-->
+@include('partials.header')
+<!--header-wrap-->
 
 {{-- <section id="billboard" class="pattern-overlay">
 	<button class="prev slick-arrow">
@@ -130,7 +80,7 @@
 	</button>
 </section> --}}
 
-{{-- <section id="featured-books" class="bookshelf">
+<section id="featured-books" class="bookshelf">
 	<div class="container">
 		<div class="row">
 			<div class="inner-content">
@@ -143,56 +93,19 @@
 			</div>
 
 			<div class="product-list" data-aos="fade-up">
-				<div class="product-grid">					
+				<div class="product-grid">
+					
+					@foreach ($details as $detail)
 					<figure class="product-style">
-						<img src="images/product-item1.jpg" alt="Books" class="product-item">
-							<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
+						<img src="images/{{ $detail["image"] }}" alt="Books" class="product-item">
+						<button class="add-to-cart"><a href="/detailProduct/{{ $detail["slug"] }}" style="color: #fff">Add to Cart</a></button>
 						<figcaption>
-							<h3>Simple way of piece life</h3>
-							<p>Armor Ramsey</p>
-							<div class="item-price">$ 40.00</div>
+							<h3>{{ $detail["title"] }}</h3>
+							<p>{{ $detail["author"] }}</p>
+							<div class="item-price">{{ $detail["price"] }}</div>
 						</figcaption>
 					</figure>
-				
-					<figure class="product-style">
-						<img src="images/product-item2.jpg" alt="Books" class="product-item">
-							<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
-						<figcaption>
-							<h3>Great travel at desert</h3>
-							<p>Sanchit Howdy</p>
-							<div class="item-price">$ 38.00</div>
-						</figcaption>
-					</figure>
-
-					<figure class="product-style">
-						<img src="images/product-item3.jpg" alt="Books" class="product-item">
-							<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
-						<figcaption>
-							<h3>The lady beauty Scarlett</h3>
-							<p>Arthur Doyle</p>
-							<div class="item-price">$ 45.00</div>
-						</figcaption>
-					</figure>
-									
-					<figure class="product-style">
-						<img src="images/product-item4.jpg" alt="Books" class="product-item">
-							<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
-						<figcaption>
-							<h3>Once upon a time</h3>
-							<p>Klien Marry</p>
-							<div class="item-price">$ 35.00</div>
-						</figcaption>
-					</figure>
-									
-					<figure class="product-style">
-						<img src="images/product-item6.jpg" alt="Books" class="product-item">
-							<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
-						<figcaption>
-							<h3>Once upon a time</h3>
-							<p>Klien Marry</p>
-							<div class="item-price">$ 35.00</div>
-						</figcaption>
-					</figure>
+					@endforeach
 
 			    </div><!--ft-books-slider-->				
 			</div><!--grid-->
@@ -204,7 +117,7 @@
 			</div><!--inner-content-->
 		</div>
 	</div>
-</section> --}}
+</section>
 
 <section id="best-selling" class="leaf-pattern-overlay">
 	<div class="corner-pattern-overlay"></div>
@@ -528,8 +441,6 @@
 			</div>
 
 		</div><!--inner-tabs-->
-			
-		</div>
 	</div>
 </section>
 
