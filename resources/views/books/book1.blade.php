@@ -119,7 +119,7 @@
                                     </div>
                                     <div class="row pb-3">
                                         <div class="col d-grid">
-                                            <a href="/form"<button type="submit" class="btn btn-success btn-lg" name="submit" value="buy">Buy</button></a>
+                                            <a href="/form"><button type="submit" class="btn btn-success btn-lg" name="submit" value="buy">Buy</button></a>
                                         </div>
                                     </div>
                                 </form>
