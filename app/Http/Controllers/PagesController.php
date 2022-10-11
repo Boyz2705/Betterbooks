@@ -79,7 +79,7 @@ class PagesController extends Controller
         return view('account');
     }
 
-    function signAdmin(){
+    function inAdmin(){
         return view('admin/sign-in');
     }
 }

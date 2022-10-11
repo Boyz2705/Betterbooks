@@ -59,7 +59,7 @@
 								<input type="text" class="form-control" placeholder="E-Mail">
 							</div>
 							<main>
-								<button id="showAlert" class="d-flex justify-content-center align-items-center text-light form-control" href="">Submit</button>
+								<button id="showAlert" class="d-flex justify-content-center align-items-center text-light form-control">Submit</button>
 							</main>
 						</form>
 					</div>
@@ -68,12 +68,6 @@
 		</div>
 	</section>
 
-	
-<body>
-    <main>
-        <button >Click Me</button>
-    </main>
-</body>
 <script>
     $("#showAlert").click(function(){
         Swal.fire(
