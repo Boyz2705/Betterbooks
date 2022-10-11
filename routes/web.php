@@ -30,6 +30,8 @@ Route::get('/book8','App\Http\Controllers\PagesController@book8Disp');
 Route::get('/form','App\Http\Controllers\PagesController@formBuy');
 Route::get('/account','App\Http\Controllers\PagesController@accPage');
 
+Route::get('/sign-in','App\Http\Controllers\PagesController@signAdmin');
+
 // Route::get('/detailProduct/{slug}','App\Http\Controllers\PagesController@show');
 
 // Route::get('/login', function () {
