@@ -260,7 +260,7 @@
 			  <div id="business" data-tab-content>
 			  	<div class="grid">
 				  	<figure class="product-style">
-						<a href=""><img src="images/tab-item2.jpg" alt="Books" class="product-item"></a>
+						<a href="/book2"><img src="images/tab-item2.jpg" alt="Books" class="product-item"></a>
 						{{-- <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button> --}}
 						<figcaption>
 							<h3>Peaceful Enlightment</h3>
@@ -270,7 +270,7 @@
 					</figure>
 
 				  	<figure class="product-style">
-						<a href=""><img src="images/tab-item4.jpg" alt="Books" class="product-item"></a>
+						<a href="/book4"><img src="images/tab-item4.jpg" alt="Books" class="product-item"></a>
 						{{-- <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button> --}}
 						<figcaption>
 							<h3>Great travel at desert</h3>
@@ -280,7 +280,7 @@
 					</figure>
 
 				  	<figure class="product-style">
-						<a href=""><img src="images/tab-item6.jpg" alt="Books" class="product-item"></a>
+						<a href="/book6"><img src="images/tab-item6.jpg" alt="Books" class="product-item"></a>
 						{{-- <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button> --}}
 						<figcaption>
 							<h3>Life among the pirates</h3>
@@ -290,7 +290,7 @@
 					</figure>
 
 				  	<figure class="product-style">
-						<a href=""><img src="images/tab-item8.jpg" alt="Books" class="product-item"></a>
+						<a href="/book8"><img src="images/tab-item8.jpg" alt="Books" class="product-item"></a>
 						{{-- <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button> --}}
 						<figcaption>
 							<h3>Simple way of piece life</h3>
@@ -304,7 +304,7 @@
 			  <div id="technology" data-tab-content>
 			  	<div class="grid">
 				  	<figure class="product-style">
-						<a href=""><img src="images/tab-item1.jpg" alt="Books" class="product-item"></a>
+						<a href="/book1"><img src="images/tab-item1.jpg" alt="Books" class="product-item"></a>
 						{{-- <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button> --}}
 						<figcaption>
 							<h3>Peaceful Enlightment</h3>
@@ -314,7 +314,7 @@
 					</figure>
 
 				  	<figure class="product-style">
-						<a href=""><img src="images/tab-item3.jpg" alt="Books" class="product-item"></a>
+						<a href="/book3"><img src="images/tab-item3.jpg" alt="Books" class="product-item"></a>
 						{{-- <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button> --}}
 						<figcaption>
 							<h3>Great travel at desert</h3>
@@ -324,7 +324,7 @@
 					</figure>
 
 				  	<figure class="product-style">
-						<a href=""><img src="images/tab-item5.jpg" alt="Books" class="product-item"></a>
+						<a href="/book5"><img src="images/tab-item5.jpg" alt="Books" class="product-item"></a>
 						{{-- <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button> --}}
 						<figcaption>
 							<h3>Life among the pirates</h3>
@@ -334,7 +334,7 @@
 					</figure>
 
 				  	<figure class="product-style">
-						<a href=""><img src="images/tab-item7.jpg" alt="Books" class="product-item"></a>
+						<a href="/book7"><img src="images/tab-item7.jpg" alt="Books" class="product-item"></a>
 						{{-- <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button> --}}
 						<figcaption>
 							<h3>Simple way of piece life</h3>
@@ -348,7 +348,7 @@
 			  <div id="romantic" data-tab-content>
 			  	<div class="grid">
 		    	  <figure class="product-style">
-						<a href=""><img src="images/tab-item1.jpg" alt="Books" class="product-item"></a>
+						<a href="/book1"><img src="images/tab-item1.jpg" alt="Books" class="product-item"></a>
 						{{-- <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button> --}}
 						<figcaption>
 							<h3>Peaceful Enlightment</h3>
@@ -358,7 +358,7 @@
 					</figure>
 
 				  	<figure class="product-style">
-						<a href=""><img src="images/tab-item3.jpg" alt="Books" class="product-item"></a>
+						<a href="/book3"><img src="images/tab-item3.jpg" alt="Books" class="product-item"></a>
 						{{-- <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button> --}}
 						<figcaption>
 							<h3>Great travel at desert</h3>
@@ -368,7 +368,7 @@
 					</figure>
 
 				  	<figure class="product-style">
-						<a href=""><img src="images/tab-item5.jpg" alt="Books" class="product-item"></a>
+						<a href="/book5"><img src="images/tab-item5.jpg" alt="Books" class="product-item"></a>
 						{{-- <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button> --}}
 						<figcaption>
 							<h3>Life among the pirates</h3>
@@ -378,7 +378,7 @@
 					</figure>
 
 				  	<figure class="product-style">
-						<a href=""><img src="images/tab-item7.jpg" alt="Books" class="product-item"></a>
+						<a href="/book7"><img src="images/tab-item7.jpg" alt="Books" class="product-item"></a>
 						{{-- <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button> --}}
 						<figcaption>
 							<h3>Simple way of piece life</h3>
@@ -392,7 +392,7 @@
 			  <div id="adventure" data-tab-content>
 			  	<div class="grid">
 				  	<figure class="product-style">
-						<a href=""><img src="images/tab-item5.jpg" alt="Books" class="product-item"></a>
+						<a href="/book5"><img src="images/tab-item5.jpg" alt="Books" class="product-item"></a>
 						{{-- <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button> --}}
 						<figcaption>
 							<h3>Life among the pirates</h3>
@@ -402,7 +402,7 @@
 					</figure>
 
 				  	<figure class="product-style">
-						<a href=""><img src="images/tab-item7.jpg" alt="Books" class="product-item"></a>
+						<a href="/book7"><img src="images/tab-item7.jpg" alt="Books" class="product-item"></a>
 						{{-- <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button> --}}
 						<figcaption>
 							<h3>Simple way of piece life</h3>
@@ -416,7 +416,7 @@
 			  <div id="fictional" data-tab-content>
 			  	<div class="grid">
 				  	<figure class="product-style">
-						<a href=""><img src="images/tab-item5.jpg" alt="Books" class="product-item"></a>
+						<a href="/book5"><img src="images/tab-item5.jpg" alt="Books" class="product-item"></a>
 						{{-- <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button> --}}
 						<figcaption>
 							<h3>Life among the pirates</h3>
@@ -426,7 +426,7 @@
 					</figure>
 
 				  	<figure class="product-style">
-						<a href=""><img src="images/tab-item7.jpg" alt="Books" class="product-item"></a>
+						<a href="/book7"><img src="images/tab-item7.jpg" alt="Books" class="product-item"></a>
 						{{-- <button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button> --}}
 						<figcaption>
 							<h3>Simple way of piece life</h3>
