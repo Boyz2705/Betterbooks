@@ -76,19 +76,19 @@
                                     <i class="fa fa-star text-warning"></i>
                                     <i class="fa fa-star text-warning"></i>
                                     <i class="fa fa-star text-secondary"></i>
-                                    <span class="list-inline-item text-dark">Rating 4.8 | 36 Comments</span>
+                                    <span class="list-inline-item text-dark">Rating 4.6 | 171 Comments</span>
                                 </p>
                                 <ul class="list-inline">
                                     <li class="list-inline-item">
                                         <h6>Writer:</h6>
                                     </li>
                                     <li class="list-inline-item">
-                                        <p class="text-muted"><strong>Adam Silber</strong></p>
+                                        <p class="text-muted"><strong>Marmik Lama</strong></p>
                                     </li>
                                 </ul>
 
                                 <h6>Description:</h6>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse. Donec condimentum elementum convallis. Nunc sed orci a diam ultrices aliquet interdum quis nulla.</p>
+                                <p>Abad Pencerahan ditandai dengan kemunculan serangkaian gagasan yang berfokus pada nilai kebahagiaan manusia, pencarian pengetahuan yang diperoleh melalui penalaran akal dan observasi dengan panca indra, dan cita-cita ideal seperti kebebasan, kemajuan, toleransi, persaudaraan, dan pemerintahan konstitusional.</p>
                                 <ul class="list-inline">
                                     <li class="list-inline-item">
                                     </li>

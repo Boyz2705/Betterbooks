@@ -69,26 +69,26 @@
                         <div class="card">
                             <div class="card-body">
                                 <h1 class="h2">Active Wear</h1>
-                                <p class="h3 py-2">$40.00</p>
+                                <p class="h3 py-2">$35.00</p>
                                 <p class="py-2">
                                     <i class="fa fa-star text-warning"></i>
                                     <i class="fa fa-star text-warning"></i>
                                     <i class="fa fa-star text-warning"></i>
                                     <i class="fa fa-star text-warning"></i>
                                     <i class="fa fa-star text-secondary"></i>
-                                    <span class="list-inline-item text-dark">Rating 4.8 | 36 Comments</span>
+                                    <span class="list-inline-item text-dark">Rating 4.3 | 196 Comments</span>
                                 </p>
                                 <ul class="list-inline">
                                     <li class="list-inline-item">
                                         <h6>Writer:</h6>
                                     </li>
                                     <li class="list-inline-item">
-                                        <p class="text-muted"><strong>Adam Silber</strong></p>
+                                        <p class="text-muted"><strong>Klien Marry</strong></p>
                                     </li>
                                 </ul>
 
                                 <h6>Description:</h6>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temp incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse. Donec condimentum elementum convallis. Nunc sed orci a diam ultrices aliquet interdum quis nulla.</p>
+                                <p>ack to nature atau kembali ke alam adalah filosofi atau gaya hidup yang lebih menekankan kedekatan dengan alam dibandingkan kecanggihan dan peradaban. Dalam hal ini, kebiasaan pedesaan dan penggembalaan kehidupan pedesaan lebih disukai daripada mode dan kecanggihan di daerah perkotaan.</p>
                                 <ul class="list-inline">
                                     <li class="list-inline-item">
                                     </li>
