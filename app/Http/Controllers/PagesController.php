@@ -86,4 +86,28 @@ class PagesController extends Controller
     function upAdmin(){
         return view('admin/sign-up');
     }
+    
+    function billingAdmin(){
+        return view('admin/billing');
+    }
+
+    function profileAdmin(){
+        return view('admin/profile');
+    }
+
+    function tablesAdmin(){
+        return view('admin/tables');
+    }
+
+    function virtualRealtyAdmin(){
+        return view('admin/virtual-reality');
+    }
+
+    function rtlAdmin(){
+        return view('admin/rtl');
+    }
+
+    function dashboardAdmin(){
+        return view('admin/dashboard');
+    }
 }

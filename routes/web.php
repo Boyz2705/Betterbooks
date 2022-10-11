@@ -32,6 +32,12 @@ Route::get('/account','App\Http\Controllers\PagesController@accPage');
 
 Route::get('/sign-in','App\Http\Controllers\PagesController@inAdmin');
 Route::get('/sign-up','App\Http\Controllers\PagesController@upAdmin');
+Route::get('/billing','App\Http\Controllers\PagesController@billingAdmin');
+Route::get('/profile','App\Http\Controllers\PagesController@profileAdmin');
+Route::get('/tables','App\Http\Controllers\PagesController@tablesAdmin');
+Route::get('/virtual-reality','App\Http\Controllers\PagesController@virtualRealtyAdmin');
+Route::get('/rtl','App\Http\Controllers\PagesController@rtlAdmin');
+Route::get('/dashboard','App\Http\Controllers\PagesController@dashboardAdmin');
 
 // Route::get('/detailProduct/{slug}','App\Http\Controllers\PagesController@show');
 
