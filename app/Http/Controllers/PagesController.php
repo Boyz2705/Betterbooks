@@ -82,5 +82,4 @@ class PagesController extends Controller
     function signAdmin(){
         return view('soft-ui-dashboard/pages/sign-in');
     }
-
 }
