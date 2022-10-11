@@ -43,6 +43,34 @@ class PagesController extends Controller
         return view('books/book1');
     }
 
+    function book2Disp(){
+        return view('books/book2');
+    }
+    
+    function book3Disp(){
+        return view('books/book3');
+    }
+
+    function book4Disp(){
+        return view('books/book4');
+    }
+
+    function book5Disp(){
+        return view('books/book5');
+    }
+
+    function book6Disp(){
+        return view('books/book6');
+    }
+
+    function book7Disp(){
+        return view('books/book7');
+    }
+
+    function book8Disp(){
+        return view('books/book8');
+    }
+
     function formBuy(){
         return view('form');
     }
@@ -50,4 +78,5 @@ class PagesController extends Controller
     function accPage(){
         return view('account');
     }
+
 }
