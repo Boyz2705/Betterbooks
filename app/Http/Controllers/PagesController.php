@@ -82,4 +82,8 @@ class PagesController extends Controller
     function inAdmin(){
         return view('admin/sign-in');
     }
+
+    function upAdmin(){
+        return view('admin/sign-up');
+    }
 }

@@ -31,7 +31,7 @@ Route::get('/form','App\Http\Controllers\PagesController@formBuy');
 Route::get('/account','App\Http\Controllers\PagesController@accPage');
 
 Route::get('/sign-in','App\Http\Controllers\PagesController@inAdmin');
-Route::get('/sign-in','App\Http\Controllers\PagesController@upAdmin');
+Route::get('/sign-up','App\Http\Controllers\PagesController@upAdmin');
 
 // Route::get('/detailProduct/{slug}','App\Http\Controllers\PagesController@show');
 
