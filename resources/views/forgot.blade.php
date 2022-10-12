@@ -59,7 +59,7 @@
 								<input type="text" class="form-control" placeholder="E-Mail">
 							</div>
 							<main>
-								<button id="showAlert" class="d-flex justify-content-center align-items-center text-light form-control">Submit</button>
+								<a><button id="showAlert" class="d-flex justify-content-center align-items-center text-light form-control">Submit</button></a>
 							</main>
 						</form>
 					</div>
