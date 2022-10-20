@@ -15,18 +15,18 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/','App\Http\Controllers\PagesController@welcome');
-Route::get('/index','App\Http\Controllers\PagesController@index');
+Route::get('/index','App\Http\Controllers\BukuController@index');
 Route::get('/register','App\Http\Controllers\PagesController@register');
 Route::get('/login','App\Http\Controllers\PagesController@login');
 Route::get('/forgot','App\Http\Controllers\PagesController@forgot');
-Route::get('/book1','App\Http\Controllers\PagesController@book1Disp');
-Route::get('/book2','App\Http\Controllers\PagesController@book2Disp');
-Route::get('/book3','App\Http\Controllers\PagesController@book3Disp');
-Route::get('/book4','App\Http\Controllers\PagesController@book4Disp');
-Route::get('/book5','App\Http\Controllers\PagesController@book5Disp');
-Route::get('/book6','App\Http\Controllers\PagesController@book6Disp');
-Route::get('/book7','App\Http\Controllers\PagesController@book7Disp');
-Route::get('/book8','App\Http\Controllers\PagesController@book8Disp');
+// Route::get('/book1','App\Http\Controllers\PagesController@book1Disp');
+// Route::get('/book2','App\Http\Controllers\PagesController@book2Disp');
+// Route::get('/book3','App\Http\Controllers\PagesController@book3Disp');
+// Route::get('/book4','App\Http\Controllers\PagesController@book4Disp');
+// Route::get('/book5','App\Http\Controllers\PagesController@book5Disp');
+// Route::get('/book6','App\Http\Controllers\PagesController@book6Disp');
+// Route::get('/book7','App\Http\Controllers\PagesController@book7Disp');
+// Route::get('/book8','App\Http\Controllers\PagesController@book8Disp');
 Route::get('/form','App\Http\Controllers\PagesController@formBuy');
 Route::get('/account','App\Http\Controllers\PagesController@accPage');
 

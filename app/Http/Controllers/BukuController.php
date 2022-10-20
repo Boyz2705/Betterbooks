@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\buku;
+use App\Models\Buku;
 use App\Http\Requests\StorebukuRequest;
 use App\Http\Requests\UpdatebukuRequest;
 
@@ -15,7 +15,9 @@ class BukuController extends Controller
      */
     public function index()
     {
-        //
+        return view('index', [
+            'bukus' => Buku::all()
+        ]); 
     }
 
     /**
@@ -23,9 +25,9 @@ class BukuController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function all()
     {
-        //
+        
     }
 
     /**
