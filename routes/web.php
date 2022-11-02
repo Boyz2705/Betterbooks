@@ -1,6 +1,6 @@
 <?php
 
-
+use App\Http\Controllers\PenggunaController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -34,7 +34,7 @@ Route::get('/sign-in','App\Http\Controllers\PagesController@inAdmin');
 Route::get('/sign-up','App\Http\Controllers\PagesController@upAdmin');
 Route::get('/billing','App\Http\Controllers\PagesController@billingAdmin');
 Route::get('/profile','App\Http\Controllers\PagesController@profileAdmin');
-Route::get('/tables','App\Http\Controllers\PagesController@tablesAdmin');
+Route::get('/tables',[PenggunaController::class,'index']);
 Route::get('/virtual-reality','App\Http\Controllers\PagesController@virtualRealtyAdmin');
 Route::get('/rtl','App\Http\Controllers\PagesController@rtlAdmin');
 Route::get('/dashboard','App\Http\Controllers\PagesController@dashboardAdmin');
