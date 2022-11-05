@@ -26,7 +26,7 @@ class PenggunaController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.createPengguna');
     }
 
     /**
@@ -37,7 +37,8 @@ class PenggunaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Pengguna::create($request->except(['_token','submit']));
+        return redirect('/tables');
     }
 
     /**
@@ -59,7 +60,8 @@ class PenggunaController extends Controller
      */
     public function edit($id)
     {
-        //
+        $pgn = Pengguna::find($id);
+        return view('admin.edit', compact(['pgn']));
     }
 
     /**
@@ -71,7 +73,9 @@ class PenggunaController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $pgn = Pengguna::find($id);
+        $pgn->update($request->except(['_token','submit']));
+        return redirect('/admin/tables');
     }
 
     /**
@@ -82,6 +86,9 @@ class PenggunaController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $pgn = Pengguna::find($id);
+        $pgn->delete();
+
+        return redirect('/tables');
     }
 }

@@ -40,7 +40,7 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg position-absolute top-0 z-index-3 w-100 shadow-none my-3  navbar-transparent mt-4">
     <div class="container">
-      <a class="navbar-brand font-weight-bolder ms-lg-0 ms-3 text-white" href="../pages/dashboards/default.blade.php">
+      <a class="navbar-brand font-weight-bolder ms-lg-0 ms-3 text-white" href="/dashboard">
         Soft UI Dashboard
       </a>
       <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
@@ -85,19 +85,19 @@
                         </div>
                         Dashboards
                       </div>
-                      <a href="../pages/dashboards/default.blade.php" class="dropdown-item border-radius-md">
+                      <a href="/dashboards/default" class="dropdown-item border-radius-md">
                         <span class="ps-3">Default</span>
                       </a>
-                      <a href="../pages/dashboards/automotive.blade.php" class="dropdown-item border-radius-md">
+                      <a href="/dashboards/automotive" class="dropdown-item border-radius-md">
                         <span class="ps-3">Automotive</span>
                       </a>
-                      <a href="../pages/dashboards/smart-home.blade.php" class="dropdown-item border-radius-md">
+                      <a href="/dashboards/smart-home" class="dropdown-item border-radius-md">
                         <span class="ps-3">Smart Home</span>
                       </a>
-                      <a href="../pages/dashboards/virtual-reality.blade.php" class="dropdown-item border-radius-md">
+                      <a href="/dashboards/virtual-reality" class="dropdown-item border-radius-md">
                         <span class="ps-3">Virtual Reality</span>
                       </a>
-                      <a href="../pages/dashboards/crm.blade.php" class="dropdown-item border-radius-md">
+                      <a href="/dashboards/crm" class="dropdown-item border-radius-md">
                         <span class="ps-3">CRM</span>
                       </a>
                       <div class="dropdown-header text-dark font-weight-bolder d-flex align-items-center mt-3 px-0">
@@ -120,10 +120,10 @@
                         </div>
                         Users
                       </div>
-                      <a href="../pages/pages/users/reports.blade.php" class="dropdown-item border-radius-md">
+                      <a href="/pages/users/reports" class="dropdown-item border-radius-md">
                         <span class="ps-3">Reports</span>
                       </a>
-                      <a href="../pages/pages/users/new-user.blade.php" class="dropdown-item border-radius-md">
+                      <a href="/pages/users/new-user" class="dropdown-item border-radius-md">
                         <span class="ps-3">New User</span>
                       </a>
                       <hr class="vertical dark">
@@ -149,13 +149,13 @@
                         </div>
                         Profile
                       </div>
-                      <a href="../pages/pages/profile/overview.blade.php" class="dropdown-item border-radius-md">
+                      <a href="/pages/profile/overview" class="dropdown-item border-radius-md">
                         <span class="ps-3">Overview</span>
                       </a>
-                      <a href="../pages/pages/profile/teams.blade.php" class="dropdown-item border-radius-md">
+                      <a href="/pages/profile/teams" class="dropdown-item border-radius-md">
                         <span class="ps-3">Teams</span>
                       </a>
-                      <a href="../pages/pages/profile/projects.blade.php" class="dropdown-item border-radius-md">
+                      <a href="/pages/profile/projects" class="dropdown-item border-radius-md">
                         <span class="ps-3">Projects</span>
                       </a>
                       <div class="dropdown-header text-dark font-weight-bolder d-flex align-items-center mt-3 px-0">
@@ -179,13 +179,13 @@
                         </div>
                         Projects
                       </div>
-                      <a href="../pages/pages/projects/general.blade.php" class="dropdown-item border-radius-md">
+                      <a href="/pages/projects/general" class="dropdown-item border-radius-md">
                         <span class="ps-3">General</span>
                       </a>
-                      <a href="../pages/pages/projects/timeline.blade.php" class="dropdown-item border-radius-md">
+                      <a href="/pages/projects/timeline" class="dropdown-item border-radius-md">
                         <span class="ps-3">Timeline</span>
                       </a>
-                      <a href="../pages/pages/projects/new-project.blade.php" class="dropdown-item border-radius-md">
+                      <a href="/pages/projects/new-project" class="dropdown-item border-radius-md">
                         <span class="ps-3">New Project</span>
                       </a>
                       <hr class="vertical dark">
@@ -212,16 +212,16 @@
                         </div>
                         Account
                       </div>
-                      <a href="../pages/pages/account/settings.blade.php" class="dropdown-item border-radius-md">
+                      <a href="/pages/account/settings" class="dropdown-item border-radius-md">
                         <span class="ps-3">Settings</span>
                       </a>
-                      <a href="../pages/pages/account/billing.blade.php" class="dropdown-item border-radius-md">
+                      <a href="/pages/account/billing" class="dropdown-item border-radius-md">
                         <span class="ps-3">Billing</span>
                       </a>
-                      <a href="../pages/pages/account/invoice.blade.php" class="dropdown-item border-radius-md">
+                      <a href="/pages/account/invoice" class="dropdown-item border-radius-md">
                         <span class="ps-3">Invoice</span>
                       </a>
-                      <a href="../pages/pages/account/security.blade.php" class="dropdown-item border-radius-md">
+                      <a href="/pages/account/security" class="dropdown-item border-radius-md">
                         <span class="ps-3">Security</span>
                       </a>
                       <div class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0 mt-3">
@@ -244,13 +244,13 @@
                         </div>
                         Extra
                       </div>
-                      <a href="../pages/pages/pricing-page.blade.php" class="dropdown-item border-radius-md">
+                      <a href="/pages/pricing-page" class="dropdown-item border-radius-md">
                         <span class="ps-3">Pricing Page</span>
                       </a>
-                      <a href="../pages/pages/rtl-page.blade.php" class="dropdown-item border-radius-md">
+                      <a href="/pages/rtl-page" class="dropdown-item border-radius-md">
                         <span class="ps-3">RTL Page</span>
                       </a>
-                      <a href="../pages/pages/widgets.blade.php" class="dropdown-item border-radius-md">
+                      <a href="/pages/widgets" class="dropdown-item border-radius-md">
                         <span class="ps-3">Widgets</span>
                       </a>
                     </div>
@@ -279,19 +279,19 @@
                   </div>
                   Dashboards
                 </div>
-                <a href="../pages/dashboards/default.blade.php" class="dropdown-item border-radius-md">
+                <a href="/dashboards/default" class="dropdown-item border-radius-md">
                   Default
                 </a>
-                <a href="../pages/dashboards/automotive.blade.php" class="dropdown-item border-radius-md">
+                <a href="/dashboards/automotive" class="dropdown-item border-radius-md">
                   Automotive
                 </a>
-                <a href="../pages/dashboards/smart-home.blade.php" class="dropdown-item border-radius-md">
+                <a href="/dashboards/smart-home" class="dropdown-item border-radius-md">
                   Smart Home
                 </a>
-                <a href="../pages/dashboards/virtual-reality.blade.php" class="dropdown-item border-radius-md">
+                <a href="/dashboards/virtual-reality" class="dropdown-item border-radius-md">
                   Virtual Reality
                 </a>
-                <a href="../pages/dashboards/crm.blade.php" class="dropdown-item border-radius-md">
+                <a href="/dashboards/crm" class="dropdown-item border-radius-md">
                   CRM
                 </a>
                 <div class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0 mt-3">
@@ -314,10 +314,10 @@
                   </div>
                   Users
                 </div>
-                <a href="../pages/pages/users/reports.blade.php" class="dropdown-item border-radius-md">
+                <a href="/pages/users/reports" class="dropdown-item border-radius-md">
                   Reports
                 </a>
-                <a href="../pages/pages/users/new-user.blade.php" class="dropdown-item border-radius-md">
+                <a href="/pages/users/new-user" class="dropdown-item border-radius-md">
                   New user
                 </a>
                 <div class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0 mt-3">
@@ -341,13 +341,13 @@
                   </div>
                   Profile
                 </div>
-                <a href="../pages/pages/profile/overview.blade.php" class="dropdown-item border-radius-md">
+                <a href="/pages/profile/overview" class="dropdown-item border-radius-md">
                   Overview
                 </a>
-                <a href="../pages/pages/profile/teams.blade.php" class="dropdown-item border-radius-md">
+                <a href="/pages/profile/teams" class="dropdown-item border-radius-md">
                   Teams
                 </a>
-                <a href="../pages/pages/profile/projects.blade.php" class="dropdown-item border-radius-md">
+                <a href="/pages/profile/projects" class="dropdown-item border-radius-md">
                   Projects
                 </a>
                 <div class="dropdown-header text-dark font-weight-bolder d-flex align-items-center mt-3 px-0">
@@ -371,13 +371,13 @@
                   </div>
                   Projects
                 </div>
-                <a href="../pages/pages/projects/general.blade.php" class="dropdown-item border-radius-md">
+                <a href="/pages/projects/general" class="dropdown-item border-radius-md">
                   General
                 </a>
-                <a href="../pages/pages/projects/timeline.blade.php" class="dropdown-item border-radius-md">
+                <a href="/pages/projects/timeline" class="dropdown-item border-radius-md">
                   Timeline
                 </a>
-                <a href="../pages/pages/projects/new-project.blade.php" class="dropdown-item border-radius-md">
+                <a href="/pages/projects/new-project" class="dropdown-item border-radius-md">
                   New Project
                 </a>
                 <div class="dropdown-header text-dark font-weight-bolder d-flex align-items-center mt-3 px-0">
@@ -400,16 +400,16 @@
                   </div>
                   Account
                 </div>
-                <a href="../pages/pages/account/settings.blade.php" class="dropdown-item border-radius-md">
+                <a href="/pages/account/settings" class="dropdown-item border-radius-md">
                   Settings
                 </a>
-                <a href="../pages/pages/account/billing.blade.php" class="dropdown-item border-radius-md">
+                <a href="/pages/account/billing" class="dropdown-item border-radius-md">
                   Billing
                 </a>
-                <a href="../pages/pages/account/invoice.blade.php" class="dropdown-item border-radius-md">
+                <a href="/pages/account/invoice" class="dropdown-item border-radius-md">
                   Invoice
                 </a>
-                <a href="../pages/pages/account/security.blade.php" class="dropdown-item border-radius-md">
+                <a href="/pages/account/security" class="dropdown-item border-radius-md">
                   Security
                 </a>
                 <div class="dropdown-header text-dark font-weight-bolder d-flex align-items-center mt-3 px-0">
@@ -434,13 +434,13 @@
                   </div>
                   Extra
                 </div>
-                <a href="../pages/pages/pricing-page.blade.php" class="dropdown-item border-radius-md">
+                <a href="/pages/pricing-page" class="dropdown-item border-radius-md">
                   Pricing Page
                 </a>
-                <a href="../pages/pages/rtl-page.blade.php" class="dropdown-item border-radius-md">
+                <a href="/pages/rtl-page" class="dropdown-item border-radius-md">
                   RTL Page
                 </a>
-                <a href="../pages/pages/widgets.blade.php" class="dropdown-item border-radius-md">
+                <a href="/pages/widgets" class="dropdown-item border-radius-md">
                   Widgets
                 </a>
               </div>
@@ -473,13 +473,13 @@
                         <img src="../assets/img/down-arrow.svg" alt="down-arrow" class="arrow">
                       </a>
                       <div class="dropdown-menu mt-0 py-3 px-2" aria-labelledby="dropdownSignIn">
-                        <a class="dropdown-item ps-3 border-radius-md mb-1" href="../pages/authentication/signin/basic.blade.php">
+                        <a class="dropdown-item ps-3 border-radius-md mb-1" href="/authentication/signin/basic">
                           <span>Basic</span>
                         </a>
-                        <a class="dropdown-item ps-3 border-radius-md mb-1" href="../pages/authentication/signin/cover.blade.php">
+                        <a class="dropdown-item ps-3 border-radius-md mb-1" href="/authentication/signin/cover">
                           <span>Cover</span>
                         </a>
-                        <a class="dropdown-item ps-3 border-radius-md mb-1" href="../pages/authentication/signin/illustration.blade.php">
+                        <a class="dropdown-item ps-3 border-radius-md mb-1" href="/authentication/signin/illustration">
                           <span>Illustration</span>
                         </a>
                       </div>
@@ -490,13 +490,13 @@
                         <img src="../assets/img/down-arrow.svg" alt="down-arrow" class="arrow">
                       </a>
                       <div class="dropdown-menu mt-0 py-3 px-2" aria-labelledby="dropdownSignUp">
-                        <a class="dropdown-item ps-3 border-radius-md mb-1" href="../pages/authentication/signup/basic.blade.php">
+                        <a class="dropdown-item ps-3 border-radius-md mb-1" href="/authentication/signup/basic">
                           <span>Basic</span>
                         </a>
-                        <a class="dropdown-item ps-3 border-radius-md mb-1" href="../pages/authentication/signup/cover.blade.php">
+                        <a class="dropdown-item ps-3 border-radius-md mb-1" href="/authentication/signup/cover">
                           <span>Cover</span>
                         </a>
-                        <a class="dropdown-item ps-3 border-radius-md mb-1" href="../pages/authentication/signup/illustration.blade.php">
+                        <a class="dropdown-item ps-3 border-radius-md mb-1" href="/authentication/signup/illustration">
                           <span>Illustration</span>
                         </a>
                       </div>
@@ -507,13 +507,13 @@
                         <img src="../assets/img/down-arrow.svg" alt="down-arrow" class="arrow">
                       </a>
                       <div class="dropdown-menu mt-0 py-3 px-2" aria-labelledby="dropdownPasswordReset">
-                        <a class="dropdown-item ps-3 border-radius-md mb-1" href="../pages/authentication/reset/basic.blade.php">
+                        <a class="dropdown-item ps-3 border-radius-md mb-1" href="/authentication/reset/basic">
                           <span>Basic</span>
                         </a>
-                        <a class="dropdown-item ps-3 border-radius-md mb-1" href="../pages/authentication/reset/cover.blade.php">
+                        <a class="dropdown-item ps-3 border-radius-md mb-1" href="/authentication/reset/cover">
                           <span>Cover</span>
                         </a>
-                        <a class="dropdown-item ps-3 border-radius-md mb-1" href="../pages/authentication/reset/illustration.blade.php">
+                        <a class="dropdown-item ps-3 border-radius-md mb-1" href="/authentication/reset/illustration">
                           <span>Illustration</span>
                         </a>
                       </div>
@@ -524,13 +524,13 @@
                         <img src="../assets/img/down-arrow.svg" alt="down-arrow" class="arrow">
                       </a>
                       <div class="dropdown-menu mt-0 py-3 px-2" aria-labelledby="dropdownLock">
-                        <a class="dropdown-item ps-3 border-radius-md mb-1" href="../pages/authentication/lock/basic.blade.php">
+                        <a class="dropdown-item ps-3 border-radius-md mb-1" href="/authentication/lock/basic">
                           <span>Basic</span>
                         </a>
-                        <a class="dropdown-item ps-3 border-radius-md mb-1" href="../pages/authentication/lock/cover.blade.php">
+                        <a class="dropdown-item ps-3 border-radius-md mb-1" href="/authentication/lock/cover">
                           <span>Cover</span>
                         </a>
-                        <a class="dropdown-item ps-3 border-radius-md mb-1" href="../pages/authentication/lock/illustration.blade.php">
+                        <a class="dropdown-item ps-3 border-radius-md mb-1" href="/authentication/lock/illustration">
                           <span>Illustration</span>
                         </a>
                       </div>
@@ -541,13 +541,13 @@
                         <img src="../assets/img/down-arrow.svg" alt="down-arrow" class="arrow">
                       </a>
                       <div class="dropdown-menu mt-0 py-3 px-2" aria-labelledby="dropdown2fa">
-                        <a class="dropdown-item ps-3 border-radius-md mb-1" href="../pages/authentication/verification/basic.blade.php">
+                        <a class="dropdown-item ps-3 border-radius-md mb-1" href="/authentication/verification/basic">
                           <span>Basic</span>
                         </a>
-                        <a class="dropdown-item ps-3 border-radius-md mb-1" href="../pages/authentication/verification/cover.blade.php">
+                        <a class="dropdown-item ps-3 border-radius-md mb-1" href="/authentication/verification/cover">
                           <span>Cover</span>
                         </a>
-                        <a class="dropdown-item ps-3 border-radius-md mb-1" href="../pages/authentication/verification/illustration.blade.php">
+                        <a class="dropdown-item ps-3 border-radius-md mb-1" href="/authentication/verification/illustration">
                           <span>Illustration</span>
                         </a>
                       </div>
@@ -558,10 +558,10 @@
                         <img src="../assets/img/down-arrow.svg" alt="down-arrow" class="arrow">
                       </a>
                       <div class="dropdown-menu mt-0 py-3 px-2" aria-labelledby="dropdownError">
-                        <a class="dropdown-item ps-3 border-radius-md mb-1" href="../pages/authentication/error/404.blade.php">
+                        <a class="dropdown-item ps-3 border-radius-md mb-1" href="/authentication/error/404">
                           <span>404</span>
                         </a>
-                        <a class="dropdown-item ps-3 border-radius-md mb-1" href="../pages/authentication/error/500.blade.php">
+                        <a class="dropdown-item ps-3 border-radius-md mb-1" href="/authentication/error/500">
                           <span>500</span>
                         </a>
                       </div>
@@ -574,70 +574,70 @@
                   <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0">
                     Sign In
                   </h6>
-                  <a href="../pages/authentication/signin/basic.blade.php" class="dropdown-item border-radius-md">
+                  <a href="/authentication/signin/basic" class="dropdown-item border-radius-md">
                     Basic
                   </a>
-                  <a href="../pages/authentication/signin/cover.blade.php" class="dropdown-item border-radius-md">
+                  <a href="/authentication/signin/cover" class="dropdown-item border-radius-md">
                     Cover
                   </a>
-                  <a href="../pages/authentication/signin/illustration.blade.php" class="dropdown-item border-radius-md">
+                  <a href="/authentication/signin/illustration" class="dropdown-item border-radius-md">
                     Illustration
                   </a>
                   <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center mt-3 px-0">
                     Sign Up
                   </h6>
-                  <a href="../pages/authentication/signup/basic.blade.php" class="dropdown-item border-radius-md">
+                  <a href="/authentication/signup/basic" class="dropdown-item border-radius-md">
                     Basic
                   </a>
-                  <a href="../pages/authentication/signup/cover.blade.php" class="dropdown-item border-radius-md">
+                  <a href="/authentication/signup/cover" class="dropdown-item border-radius-md">
                     Cover
                   </a>
-                  <a href="../pages/authentication/signup/illustration.blade.php" class="dropdown-item border-radius-md">
+                  <a href="/authentication/signup/illustration" class="dropdown-item border-radius-md">
                     Illustration
                   </a>
                   <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center mt-3 px-0">
                     Reset Password
                   </h6>
-                  <a href="../pages/authentication/reset/basic.blade.php" class="dropdown-item border-radius-md">
+                  <a href="/authentication/reset/basic" class="dropdown-item border-radius-md">
                     Basic
                   </a>
-                  <a href="../pages/authentication/reset/cover.blade.php" class="dropdown-item border-radius-md">
+                  <a href="/authentication/reset/cover" class="dropdown-item border-radius-md">
                     Cover
                   </a>
-                  <a href="../pages/authentication/reset/illustration.blade.php" class="dropdown-item border-radius-md">
+                  <a href="/authentication/reset/illustration" class="dropdown-item border-radius-md">
                     Illustation
                   </a>
                   <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center mt-3 px-0">
                     Lock
                   </h6>
-                  <a href="../pages/authentication/lock/basic.blade.php" class="dropdown-item border-radius-md">
+                  <a href="/authentication/lock/basic" class="dropdown-item border-radius-md">
                     Basic
                   </a>
-                  <a href="../pages/authentication/lock/cover.blade.php" class="dropdown-item border-radius-md">
+                  <a href="/authentication/lock/cover" class="dropdown-item border-radius-md">
                     Cover
                   </a>
-                  <a href="../pages/authentication/lock/illustration.blade.php" class="dropdown-item border-radius-md">
+                  <a href="/authentication/lock/illustration" class="dropdown-item border-radius-md">
                     Illustration
                   </a>
                   <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center mt-3 px-0">
                     2-Step Verification
                   </h6>
-                  <a href="../pages/authentication/verification/basic.blade.php" class="dropdown-item border-radius-md">
+                  <a href="/authentication/verification/basic" class="dropdown-item border-radius-md">
                     Basic
                   </a>
-                  <a href="../pages/authentication/verification/cover.blade.php" class="dropdown-item border-radius-md">
+                  <a href="/authentication/verification/cover" class="dropdown-item border-radius-md">
                     Cover
                   </a>
-                  <a href="../pages/authentication/verification/illustration.blade.php" class="dropdown-item border-radius-md">
+                  <a href="/authentication/verification/illustration" class="dropdown-item border-radius-md">
                     Illustration
                   </a>
                   <h6 class="dropdown-header text-dark font-weight-bolder d-flex align-items-center mt-3 px-0">
                     Error
                   </h6>
-                  <a href="../pages/authentication/error/404.blade.php" class="dropdown-item border-radius-md">
+                  <a href="/authentication/error/404" class="dropdown-item border-radius-md">
                     404
                   </a>
-                  <a href="../pages/authentication/error/500.blade.php" class="dropdown-item border-radius-md">
+                  <a href="/authentication/error/500" class="dropdown-item border-radius-md">
                     500
                   </a>
                 </div>
@@ -654,7 +654,7 @@
               <div class="d-none d-lg-block">
                 <ul class="list-group">
                   <li class="nav-item dropdown dropdown-hover dropdown-subitem list-group-item border-0 p-0">
-                    <a class="dropdown-item py-2 ps-3 border-radius-md" href="../pages/applications/kanban.blade.php">
+                    <a class="dropdown-item py-2 ps-3 border-radius-md" href="/applications/kanban">
                       <div class="d-flex">
                         <div class="icon h-10 me-3 d-flex mt-1">
                           <i class="ni ni-single-copy-04 text-gradient text-primary"></i>
@@ -668,7 +668,7 @@
                     </a>
                   </li>
                   <li class="nav-item dropdown dropdown-hover dropdown-subitem list-group-item border-0 p-0">
-                    <a class="dropdown-item py-2 ps-3 border-radius-md" href="../pages/applications/wizard.blade.php">
+                    <a class="dropdown-item py-2 ps-3 border-radius-md" href="/applications/wizard">
                       <div class="d-flex">
                         <div class="icon h-10 me-3 d-flex mt-1">
                           <i class="ni ni-laptop text-gradient text-primary"></i>
@@ -682,7 +682,7 @@
                     </a>
                   </li>
                   <li class="nav-item dropdown dropdown-hover dropdown-subitem list-group-item border-0 p-0">
-                    <a class="dropdown-item py-2 ps-3 border-radius-md" href="../pages/applications/datatables.blade.php">
+                    <a class="dropdown-item py-2 ps-3 border-radius-md" href="/applications/datatables">
                       <div class="d-flex">
                         <div class="icon h-10 me-3 d-flex mt-1">
                           <i class="ni ni-badge text-gradient text-primary"></i>
@@ -696,7 +696,7 @@
                     </a>
                   </li>
                   <li class="nav-item dropdown dropdown-hover dropdown-subitem list-group-item border-0 p-0">
-                    <a class="dropdown-item py-2 ps-3 border-radius-md" href="../pages/applications/calendar.blade.php">
+                    <a class="dropdown-item py-2 ps-3 border-radius-md" href="/applications/calendar">
                       <div class="d-flex">
                         <div class="icon h-10 me-3 d-flex mt-1">
                           <i class="ni ni-notification-70 text-gradient text-primary"></i>
@@ -714,7 +714,7 @@
               <!-- responsive -->
               <div class="row d-lg-none">
                 <div class="col-md-12">
-                  <a class="py-2 ps-3 border-radius-md" href="../pages/applications/kanban.blade.php">
+                  <a class="py-2 ps-3 border-radius-md" href="/applications/kanban">
                     <div class="d-flex">
                       <div class="icon h-10 me-3 d-flex mt-1">
                         <i class="ni ni-single-copy-04 text-gradient text-primary"></i>
@@ -726,7 +726,7 @@
                       </div>
                     </div>
                   </a>
-                  <a class="py-2 ps-3 border-radius-md" href="../pages/applications/wizard.blade.php">
+                  <a class="py-2 ps-3 border-radius-md" href="/applications/wizard">
                     <div class="d-flex">
                       <div class="icon h-10 me-3 d-flex mt-1">
                         <i class="ni ni-laptop text-gradient text-primary"></i>
@@ -738,7 +738,7 @@
                       </div>
                     </div>
                   </a>
-                  <a class="py-2 ps-3 border-radius-md" href="../pages/applications/datatables.blade.php">
+                  <a class="py-2 ps-3 border-radius-md" href="/applications/datatables">
                     <div class="d-flex">
                       <div class="icon h-10 me-3 d-flex mt-1">
                         <i class="ni ni-badge text-gradient text-primary"></i>
@@ -750,7 +750,7 @@
                       </div>
                     </div>
                   </a>
-                  <a class="py-2 ps-3 border-radius-md" href="../pages/applications/calendar.blade.php">
+                  <a class="py-2 ps-3 border-radius-md" href="/applications/calendar">
                     <div class="d-flex">
                       <div class="icon h-10 me-3 d-flex mt-1">
                         <i class="ni ni-notification-70 text-gradient text-primary"></i>
@@ -797,10 +797,10 @@
                         </div>
                         Orders
                       </div>
-                      <a href="../pages/ecommerce/orders/list.blade.php" class="dropdown-item border-radius-md">
+                      <a href="/ecommerce/orders/list" class="dropdown-item border-radius-md">
                         <span class="ps-3">Order List</span>
                       </a>
-                      <a href="../pages/pages/orders/details.blade.php" class="dropdown-item border-radius-md">
+                      <a href="/pages/orders/details" class="dropdown-item border-radius-md">
                         <span class="ps-3">Order Details</span>
                       </a>
                       <div class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0 mt-3">
@@ -824,10 +824,10 @@
                         </div>
                         General
                       </div>
-                      <a href="../pages/ecommerce/overview.blade.php" class="dropdown-item border-radius-md">
+                      <a href="/ecommerce/overview" class="dropdown-item border-radius-md">
                         <span class="ps-3">Overview</span>
                       </a>
-                      <a href="../pages/ecommerce/referral.blade.php" class="dropdown-item border-radius-md">
+                      <a href="/ecommerce/referral" class="dropdown-item border-radius-md">
                         <span class="ps-3">Referral</span>
                       </a>
                       <hr class="vertical dark">
@@ -853,16 +853,16 @@
                         </div>
                         Products
                       </div>
-                      <a href="../pages/ecommerce/products/new-product.blade.php" class="dropdown-item border-radius-md">
+                      <a href="/ecommerce/products/new-product" class="dropdown-item border-radius-md">
                         <span class="ps-3">New Product</span>
                       </a>
-                      <a href="../pages/ecommerce/products/edit-product.blade.php" class="dropdown-item border-radius-md">
+                      <a href="/ecommerce/products/edit-product" class="dropdown-item border-radius-md">
                         <span class="ps-3">Edit Product</span>
                       </a>
-                      <a href="../pages/ecommerce/products/product-page.blade.php" class="dropdown-item border-radius-md">
+                      <a href="/ecommerce/products/product-page" class="dropdown-item border-radius-md">
                         <span class="ps-3">Product Page</span>
                       </a>
-                      <a href="../pages/ecommerce/products/products-list.blade.php" class="dropdown-item border-radius-md">
+                      <a href="/ecommerce/products/products-list" class="dropdown-item border-radius-md">
                         <span class="ps-3">Products List</span>
                       </a>
                     </div>
@@ -891,10 +891,10 @@
                   </div>
                   Orders
                 </div>
-                <a href="../pages/ecommerce/orders/list.blade.php" class="dropdown-item border-radius-md">
+                <a href="/ecommerce/orders/list" class="dropdown-item border-radius-md">
                   Order List
                 </a>
-                <a href="../pages/pages/orders/details.blade.php" class="dropdown-item border-radius-md">
+                <a href="/pages/orders/details" class="dropdown-item border-radius-md">
                   Order Details
                 </a>
                 <div class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0 mt-3">
@@ -918,10 +918,10 @@
                   </div>
                   General
                 </div>
-                <a href="../pages/ecommerce/overview.blade.php" class="dropdown-item border-radius-md">
+                <a href="/ecommerce/overview" class="dropdown-item border-radius-md">
                   Overview
                 </a>
-                <a href="../pages/ecommerce/referral.blade.php" class="dropdown-item border-radius-md">
+                <a href="/ecommerce/referral" class="dropdown-item border-radius-md">
                   Referral
                 </a>
                 <div class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0 mt-3">
@@ -944,16 +944,16 @@
                   </div>
                   Products
                 </div>
-                <a href="../pages/ecommerce/products/new-product.blade.php" class="dropdown-item border-radius-md">
+                <a href="/ecommerce/products/new-product" class="dropdown-item border-radius-md">
                   New Product
                 </a>
-                <a href="../pages/ecommerce/products/edit-product.blade.php" class="dropdown-item border-radius-md">
+                <a href="/ecommerce/products/edit-product" class="dropdown-item border-radius-md">
                   Edit Product
                 </a>
-                <a href="../pages/ecommerce/products/product-page.blade.php" class="dropdown-item border-radius-md">
+                <a href="/ecommerce/products/product-page" class="dropdown-item border-radius-md">
                   Product Page
                 </a>
-                <a href="../pages/ecommerce/products/products-list.blade.php" class="dropdown-item border-radius-md">
+                <a href="/ecommerce/products/products-list" class="dropdown-item border-radius-md">
                   Products List
                 </a>
               </div>
@@ -1101,7 +1101,7 @@
               </div>
               <div class="row d-lg-none">
                 <div class="col-md-12 g-0">
-                  <a class="dropdown-item py-2 ps-3 border-radius-md" href="../pages/about-us.blade.php">
+                  <a class="dropdown-item py-2 ps-3 border-radius-md" href="/about-us">
                     <div class="d-flex">
                       <div class="icon h-10 me-3 d-flex mt-1">
                         <svg class="text-secondary" width="16px" height="16px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -1126,7 +1126,7 @@
                       </div>
                     </div>
                   </a>
-                  <a class="dropdown-item py-2 ps-3 border-radius-md" href="../pages/about-us.blade.php">
+                  <a class="dropdown-item py-2 ps-3 border-radius-md" href="/about-us">
                     <div class="d-flex">
                       <div class="icon h-10 me-3 d-flex mt-1">
                         <svg class="text-secondary" width="16px" height="16px" viewBox="0 0 40 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -1149,7 +1149,7 @@
                       </div>
                     </div>
                   </a>
-                  <a class="dropdown-item py-2 ps-3 border-radius-md" href="../pages/about-us.blade.php">
+                  <a class="dropdown-item py-2 ps-3 border-radius-md" href="/about-us">
                     <div class="d-flex">
                       <div class="icon h-10 me-3 d-flex mt-1">
                         <svg class="text-secondary" width="16px" height="16px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -1173,7 +1173,7 @@
                       </div>
                     </div>
                   </a>
-                  <a class="dropdown-item py-2 ps-3 border-radius-md" href="../pages/about-us.blade.php">
+                  <a class="dropdown-item py-2 ps-3 border-radius-md" href="/about-us">
                     <div class="d-flex">
                       <div class="icon h-10 me-3 d-flex mt-1">
                         <svg class="text-secondary" width="16px" height="16px" viewBox="0 0 40 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -1196,7 +1196,7 @@
                       </div>
                     </div>
                   </a>
-                  <a class="dropdown-item py-2 ps-3 border-radius-md" href="../pages/about-us.blade.php">
+                  <a class="dropdown-item py-2 ps-3 border-radius-md" href="/about-us">
                     <div class="d-flex">
                       <div class="icon h-10 me-3 d-flex mt-1">
                         <svg class="text-secondary" width="16px" height="16px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">

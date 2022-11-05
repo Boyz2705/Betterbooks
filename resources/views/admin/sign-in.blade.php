@@ -43,7 +43,7 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg blur blur-rounded top-0 z-index-3 shadow position-absolute my-3 py-2 start-0 end-0 mx-4">
           <div class="container-fluid">
-            <a class="navbar-brand font-weight-bolder ms-lg-0 ms-3 " href="../pages/dashboard.blade.php">
+            <a class="navbar-brand font-weight-bolder ms-lg-0 ms-3 " href="/dashboard">
               Soft UI Dashboard
             </a>
             <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,25 +56,25 @@
             <div class="collapse navbar-collapse" id="navigation">
               <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                  <a class="nav-link d-flex align-items-center me-2 active" aria-current="page" href="../pages/dashboard.blade.php">
+                  <a class="nav-link d-flex align-items-center me-2 active" aria-current="page" href="/dashboard">
                     <i class="fa fa-chart-pie opacity-6 text-dark me-1"></i>
                     Dashboard
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link me-2" href="../pages/profile.blade.php">
+                  <a class="nav-link me-2" href="/profile">
                     <i class="fa fa-user opacity-6 text-dark me-1"></i>
                     Profile
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link me-2" href="../pages/sign-up.blade.php">
+                  <a class="nav-link me-2" href="/sign-up">
                     <i class="fas fa-user-circle opacity-6 text-dark me-1"></i>
                     Sign Up
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link me-2" href="../pages/sign-in.blade.php">
+                  <a class="nav-link me-2" href="/sign-in">
                     <i class="fas fa-key opacity-6 text-dark me-1"></i>
                     Sign In
                   </a>
