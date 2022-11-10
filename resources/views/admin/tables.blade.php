@@ -401,10 +401,10 @@
                         <a href="/admin/{{ $p->id }}/edit" class="btn btn-primary text-xs">
                           Edit
                         </a>
-                        <form action="/admin/{{ $p->id }}" method="POST">
+                        <form action="/admin/{{ $p->id }}" method="POST" style="display:inline">
                           @csrf
                           @method('delete')
-                          <input type="submit" value="Delete">
+                          <button type="submit" class="btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
                         </form>
                       </td>
                     </tr>
