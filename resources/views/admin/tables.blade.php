@@ -398,10 +398,9 @@
                         <span class="text-secondary text-xs font-weight-bold">{{ $p->id }}</span>
                       </td>
                       <td class="align-middle">
-                        <a href="/admin/{{ $p->id }}/edit" class="btn btn-primary text-xs">
-                          Edit
+                        <a type="submit" href="/admin/{{ $p->id }}/edit" class="btn btn-primary"> <i class="fa fa-pencil" aria-hidden="true"></i>
                         </a>
-                        <form action="/admin/{{ $p->id }}" method="POST" style="display:inline">
+                        <form class="d-inline" action="/admin/{{ $p->id }}" method="POST">
                           @csrf
                           @method('delete')
                           <button type="submit" class="btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
@@ -558,7 +557,7 @@
           </div>
         </div>
       </div>
-      <div class="row">
+      {{-- <div class="row">
         <div class="col-12">
           <div class="card mb-4">
             <div class="card-header pb-0">
@@ -781,7 +780,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> --}}
       <footer class="footer pt-3  ">
         <div class="container-fluid">
           <div class="row align-items-center justify-content-lg-between">

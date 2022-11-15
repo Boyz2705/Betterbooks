@@ -71,11 +71,17 @@ class PenggunaController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function kontol(Request $request)
     {
-        $pgn = Pengguna::find($id);
-        $pgn->update($request->except(['_token','submit']));
-        return redirect('/admin/tables');
+        $pgn = Pengguna::find($request['idd']);
+
+        $pgn->update([
+            'nama'=>$request['nama'],
+            'email'=>$request['email'],
+            'umur'=>$request['umur']
+        ]);
+        $pgn->save();
+        return redirect('/tables');
     }
 
     /**

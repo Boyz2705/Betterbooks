@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\PenggunaController;
+use Database\Seeders\PenggunaSeeder;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -41,7 +42,8 @@ Route::get('/tables',[PenggunaController::class,'index']);
 Route::get('/createPengguna',[PenggunaController::class,'create']);
 Route::post('/store',[PenggunaController::class,'store']);
 Route::get('admin/{id}/edit',[PenggunaController::class,'edit']);
-Route::put('/{id}',[PenggunaController::class,'update']);
+Route::get('admin/{id}',[PenggunaController::class,'update']);
+Route::post('admin-edit',[PenggunaController::class,'kontol']);
 Route::delete('admin/{id}',[PenggunaController::class,'destroy']);
 
 // Route::get('/detailProduct/{slug}','App\Http\Controllers\PagesController@show');
