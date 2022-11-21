@@ -24,8 +24,8 @@
 
         <div>
             <figure class="product-style">
-                <img src="images/{{ $booksdetail["image"] }}" alt="Books" class="product-item">
-                <button class="add-to-cart"><a href="/detailProduct/{{ $booksdetail["slug"] }}" style="color: #fff">Add to Cart</a></button>
+                <img src="images/{{ $booksdetail['image'] }}" alt="Books" class="product-item">
+                {{-- <button class="add-to-cart"><a href="/detailProduct/{{ $booksdetail["id"] }}" style="color: #fff">Add to Cart</a></button> --}}
                 <figcaption>
                     <h3>{{ $buku->nama}}</h3>
                     <p>{{ $buku->tglMasuk }}</p>

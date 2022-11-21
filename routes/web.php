@@ -1,8 +1,9 @@
 <?php
 
-use App\Http\Controllers\PenggunaController;
 use Database\Seeders\PenggunaSeeder;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BukuController;
+use App\Http\Controllers\PenggunaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -46,7 +47,7 @@ Route::get('admin/{id}',[PenggunaController::class,'update']);
 Route::post('admin-edit',[PenggunaController::class,'kontol']);
 Route::delete('admin/{id}',[PenggunaController::class,'destroy']);
 
-// Route::get('/detailProduct/{slug}','App\Http\Controllers\PagesController@show');
+Route::get('/detailProduct/{id}',[BukuController::class,'show']);
 
 // Route::get('/login', function () {
 //     return view('login');

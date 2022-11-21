@@ -96,17 +96,17 @@
 					
 					@foreach ($bukus as $buku)
 						<figure class="product-style">
-							<img src="images/{{ $buku->image }}" alt="Books">
-							<button class="add-to-cart"><a href="/detailProduct" style="color: #fff">Add to Cart</a></button>
+							<img src="images/{{ $buku->image }}" alt="Books" class="product-item">
+							<button class="add-to-cart"><a href="/detailProduct/{id}" style="color: #fff">Buy Now</a></button>
 							<figcaption>
 								<h3>{{ $buku->nama }}</h3>
 								<p>{{ $buku->tglMasuk }}</p>
-								<div class="item-price">{{ $buku->harga }}</div>
+								<div class="item-price">Rp {{ $buku->harga }}</div>
 							</figcaption>
 						</figure>
 					@endforeach
 
-			    </div><!--ft-books-slider-->				
+			    </div><!--ft-books-slider-->
 			</div><!--grid-->
 			<div class="container">
 				<div class="row">
@@ -120,7 +120,7 @@
 										<h3>Simple way of piece life</h3>
 										<p>Armor Ramsey</p>
 										<div class="item-price">
-										<span class="prev-price">$ 50.00</span>$ 40.00</div>
+										$ 40.00</div>
 									</figcaption>
 								</figure>
 							
@@ -131,7 +131,7 @@
 										<h3>Great travel at desert</h3>
 										<p>Sanchit Howdy</p>
 										<div class="item-price">
-										<span class="prev-price">$ 30.00</span>$ 38.00</div>
+										$ 38.00</div>
 									</figcaption>
 								</figure>
 							
@@ -142,7 +142,7 @@
 										<h3>The lady beauty Scarlett</h3>
 										<p>Arthur Doyle</p>
 										<div class="item-price">
-										<span class="prev-price">$ 35.00</span>$ 45.00</div>
+										$ 45.00</div>
 									</figcaption>
 								</figure>
 							
@@ -153,7 +153,7 @@
 										<h3>Once upon a time</h3>
 										<p>Klien Marry</p>
 										<div class="item-price">
-										<span class="prev-price">$ 25.00</span>$ 35.00</div>
+										$ 35.00</div>
 									</figcaption>
 								</figure>
 		

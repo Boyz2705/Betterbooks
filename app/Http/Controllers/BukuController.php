@@ -15,9 +15,7 @@ class BukuController extends Controller
      */
     public function index()
     {
-        return view('index', [
-            'bukus' => Buku::all()
-        ]);
+        return view('index', ['bukus' => Buku::all()]);
     }
 
     /**
@@ -47,9 +45,8 @@ class BukuController extends Controller
      * @param  \App\Models\buku  $buku
      * @return \Illuminate\Http\Response
      */
-    public function show(buku $buku)
-    {
-        //
+    function show($id){
+        return view('detailProduct', ["booksdetail" => Buku::find($id)]);
     }
 
     /**

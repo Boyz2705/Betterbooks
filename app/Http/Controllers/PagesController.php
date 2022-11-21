@@ -26,9 +26,7 @@ class PagesController extends Controller
     }
 
     // function show($slug){
-    //     return view('detailProduct', [
-    //         "booksdetail" => BooksDetail::find($slug)
-    //     ]);
+    //     return view('detailProduct', ["booksdetail" => BooksDetail::find($slug)]);
     // }
 
     function forgot(){
