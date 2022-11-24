@@ -2,7 +2,7 @@
 	<div class="top-content">
 		<div class="container">
 			<div class="inner-content">
-				<div class="grid">					
+				<div class="grid">
 					<div class="right-element">
 						<div class="grid">
 							<div class="user-account for-buy">
@@ -40,7 +40,7 @@
 			<div class="inner-content">
 				<div class="grid">
 					<div class="main-logo">
-						<a href="/index"><img src="images/main-logo.png" alt="logo"></a>
+						<a href="/index"><img src="{{ asset('images/main-logo.png') }}" alt="logo"></a>
 					</div>
 
 					<nav id="navbar">

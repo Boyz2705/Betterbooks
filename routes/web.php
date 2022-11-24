@@ -50,7 +50,6 @@ Route::group(['middleware' => 'auth'], function() {
         Route::post('admin-edit',[PenggunaController::class,'update']);
         Route::delete('admin/{id}',[PenggunaController::class,'destroy']);
 
-        Route::get('detailProduct/{id}',[BukuController::class,'detail']);
         Route::get('/Buku',[BukuController::class,'index2']);
         Route::get('/createBuku',[BukuController::class,'create']);
         Route::get('admin/{id}/editBuku',[BukuController::class,'edit']);
@@ -69,6 +68,7 @@ Route::group(['middleware' => 'auth'], function() {
         Route::get('/index','App\Http\Controllers\BukuController@index');
         Route::get('/book1','App\Http\Controllers\PagesController@book1Disp');
         Route::get('/form','App\Http\Controllers\PagesController@formBuy');
+        Route::get('detailProduct/{id}',[BukuController::class,'detail']);
     });
 });
 

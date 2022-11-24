@@ -11,20 +11,20 @@
 	    <meta name="author" content="">
 	    <meta name="keywords" content="">
 	    <meta name="description" content="">
-	    <link rel="stylesheet" type="text/css" href="icomoon/icomoon.css">
-	    <link rel="stylesheet" type="text/css" href="css/vendor.css">
-	    <link rel="stylesheet" type="text/css" href="css/styles.css">
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/templatemo.css">
-        <link rel="stylesheet" href="assets/css/custom.css">
+	    <link rel="stylesheet" type="text/css" href="{{ asset('icomoon/icomoon.css') }}">
+	    <link rel="stylesheet" type="text/css" href="{{ asset('css/vendor.css') }}">
+	    <link rel="stylesheet" type="text/css" href="{{ asset('css/styles.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets/css/templatemo.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
 
         <!-- Load fonts style after rendering the layout styles -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
-        <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+        <link rel="stylesheet" href="{{ asset('assets/css/fontawesome.min.css') }}">
 
         <!-- Slick -->
-        <link rel="stylesheet" type="text/css" href="assets/css/slick.min.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
+        <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/slick.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/slick-theme.css') }}">
 
 		<!-- script-->
 		<script src="js/modernizr.js"></script>
@@ -32,7 +32,7 @@
 	</head>
 
 <body>
-    
+
     @include('partials.header')
 
 	<section class="bg-light">
@@ -40,7 +40,7 @@
 			<div class="row">
 				<div class="col-lg-5 mt-5">
 					<div class="card mb-3">
-						<img class="card-img img-fluid" src="{{ $buku['image'] }}}}" alt="Card image cap" id="product-detail">
+						<img class="card-img img-fluid" src="{{ asset('images/'.$buku->image) }}" alt="Card image cap" id="product-detail">
 						</div>
 						<div class="row">
 						</div>
@@ -122,7 +122,7 @@
         <script src="js/slideNav.min.js"></script>
         <script src="js/slideNav.js"></script>
         <script src="js/plugins.js"></script>
-        <script src="js/script.js"></script>	
+        <script src="js/script.js"></script>
 
 </body>
 </html>
