@@ -71,7 +71,7 @@ class PenggunaController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function kontol(Request $request)
+    public function update(Request $request)
     {
         $pgn = Pengguna::find($request['idd']);
 

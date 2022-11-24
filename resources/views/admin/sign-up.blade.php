@@ -215,8 +215,8 @@
                       <a href="/pages/account/settings" class="dropdown-item border-radius-md">
                         <span class="ps-3">Settings</span>
                       </a>
-                      <a href="/pages/account/billing" class="dropdown-item border-radius-md">
-                        <span class="ps-3">Billing</span>
+                      <a href="/admin/Buku" class="dropdown-item border-radius-md">
+                        <span class="ps-3">Buku</span>
                       </a>
                       <a href="/pages/account/invoice" class="dropdown-item border-radius-md">
                         <span class="ps-3">Invoice</span>
@@ -403,8 +403,8 @@
                 <a href="/pages/account/settings" class="dropdown-item border-radius-md">
                   Settings
                 </a>
-                <a href="/pages/account/billing" class="dropdown-item border-radius-md">
-                  Billing
+                <a href="/pages/account/Buku" class="dropdown-item border-radius-md">
+                  Buku
                 </a>
                 <a href="/pages/account/invoice" class="dropdown-item border-radius-md">
                   Invoice

@@ -85,8 +85,8 @@ class PagesController extends Controller
         return view('admin/sign-up');
     }
     
-    function billingAdmin(){
-        return view('admin/billing');
+    function BukuAdmin(){
+        return view('admin/Buku');
     }
 
     function profileAdmin(){

@@ -97,7 +97,7 @@
 					@foreach ($bukus as $buku)
 						<figure class="product-style">
 							<img src="images/{{ $buku->image }}" alt="Books" class="product-item">
-							<button class="add-to-cart"><a href="/detailProduct/{id}" style="color: #fff">Buy Now</a></button>
+							<button class="add-to-cart"><a href="/detailProduct/{{ $buku->id }}" style="color: #fff">Buy Now</a></button>
 							<figcaption>
 								<h3>{{ $buku->nama }}</h3>
 								<p>{{ $buku->tglMasuk }}</p>

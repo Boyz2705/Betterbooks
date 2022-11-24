@@ -18,14 +18,20 @@ class BukuController extends Controller
         return view('index', ['bukus' => Buku::all()]);
     }
 
+    public function index2()
+    {
+        $bukus = Buku::all();
+        return view('admin.Buku', compact(['bukus']));
+    }
+
     /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function all()
+    public function create()
     {
-        
+        return view('admin.createBuku');
     }
 
     /**
@@ -45,19 +51,23 @@ class BukuController extends Controller
      * @param  \App\Models\buku  $buku
      * @return \Illuminate\Http\Response
      */
-    function show($id){
-        return view('detailProduct', ["booksdetail" => Buku::find($id)]);
+    function detail($id)
+    {
+        $data = Buku::find($id);
+        return view('detailProduct',['buku'=>$data]) ;
     }
-
     /**
      * Show the form for editing the specified resource.
      *
      * @param  \App\Models\buku  $buku
      * @return \Illuminate\Http\Response
      */
-    public function edit(buku $buku)
+    public function edit($id)
     {
-        //
+        {
+            $bukus = Buku::find($id);
+            return view('admin.editBuku', compact(['bukus']));
+        }
     }
 
     /**
@@ -69,7 +79,19 @@ class BukuController extends Controller
      */
     public function update(UpdatebukuRequest $request, buku $buku)
     {
-        //
+        {
+            $bukus = Buku::find($request['Buks']);
+    
+            $bukus->update([
+                'nama'=>$request['nama'],
+                'harga'=>$request['harga'],
+                'tglMasuk'=>$request['tglMasuk'],
+                'thnTerbit'=>$request['thnTerbit']
+            ]);
+
+            $bukus->save();
+            return redirect('/tables');
+        }
     }
 
     /**
@@ -78,8 +100,11 @@ class BukuController extends Controller
      * @param  \App\Models\buku  $buku
      * @return \Illuminate\Http\Response
      */
-    public function destroy(buku $buku)
+    public function destroy($id)
     {
-        //
+        $bukus = Buku::find($id);
+        $bukus->delete();
+
+        return redirect('/Buku');
     }
 }
