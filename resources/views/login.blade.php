@@ -26,11 +26,11 @@
                 </button>
             </div>
         </nav> --}}
-		
+
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	
+
 	<link rel="stylesheet" href="css/styleSignUp.css">
 
 	</head>
@@ -47,29 +47,33 @@
 				<div class="col-md-6 col-lg-4">
 					<div class="login-wrap p-0">
 		      			<h3 class="mb-4 text-center">Have an account?</h3>
-		      			<form action="#" class="signin-form">
+
+		      			<form action="/login" method="POST" class="signin-form">
+                            @csrf
 							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Username" required>
+								<input type="text" name="email" class="form-control" placeholder="Email" required>
 							</div>
 							<div class="form-group">
-							<input id="password-field" type="password" class="form-control" placeholder="Password" required>
-							<span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+							    <input id="password-field" name="password" type="password" class="form-control" placeholder="Password" required>
+							    <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
 							</div>
 							<div class="form-group">
-								<a class="d-flex justify-content-center align-items-center text-light form-control" href="/index">Login</a>
-							</div>
-							<div class="form-group d-md-flex">
-								<div class="w-50">
-									<label class="checkbox-wrap checkbox-primary">Remember Me
-										<input type="checkbox" checked>
-										<span class="checkmark"></span>
-									</label>
-								</div>
-								<div class="w-50 text-md-right">
-									<a href="/forgot" style="color: #fff">Forgot Password</a>
-								</div>
+								<button type="submit" class="d-flex justify-content-center align-items-center text-light form-control">Login</button>
 							</div>
 						</form>
+
+                        <div class="form-group d-md-flex">
+                            <div class="w-50">
+                                <label class="checkbox-wrap checkbox-primary">Remember Me
+                                    <input type="checkbox" checked>
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="w-50 text-md-right">
+                                <a href="/forgot" style="color: #fff">Forgot Password</a>
+                            </div>
+                        </div>
+
 					</div>
 				</div>
 			</div>

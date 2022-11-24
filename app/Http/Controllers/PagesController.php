@@ -7,14 +7,6 @@ use App\Models\BooksDetail;
 
 class PagesController extends Controller
 {
-    function login(){
-        return view('login');
-    }
-
-    function register(){
-        return view('register');
-    }
-
     // function index(){
     //     return view('index', [
     //         "details" => BooksDetail::all()
@@ -44,7 +36,7 @@ class PagesController extends Controller
     function book2Disp(){
         return view('books/book2');
     }
-    
+
     function book3Disp(){
         return view('books/book3');
     }
@@ -84,7 +76,7 @@ class PagesController extends Controller
     function upAdmin(){
         return view('admin/sign-up');
     }
-    
+
     function BukuAdmin(){
         return view('admin/Buku');
     }

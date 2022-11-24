@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('nama');
             $table->string('email');
             $table->integer('umur');
+            $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
             $table->timestamps();
         });
     }
