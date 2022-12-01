@@ -8,8 +8,15 @@
 							<div class="user-account for-buy">
 								<a href="#">
 								<i class="icon icon-user"></i>
-								<span>Account</span>
+								<span>{{ Auth()->User()->email }}</span>
 								</a>
+								<form action="/logout" method="POST" class="nav-item d-flex align-items-center">
+									@csrf
+									<button type="submit" class="btn btn-danger">
+										<i class="fa fa-user me-sm-1"></i>
+										<span class="d-sm-inline d-none">Log out</span>
+									</button>
+								</form>
 							</div>
 
 							{{-- <div class="cart for-buy">

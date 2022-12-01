@@ -16,10 +16,10 @@ return new class extends Migration
         Schema::create('bukus', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
-            $table->integer('harga');
+            $table->string('harga');
             $table->string('tglMasuk');
-            $table->string('thnTerbit');
             $table->string('kategori');
+            $table->string('thnTerbit');
             $table->string('image');
             $table->timestamps();
         });

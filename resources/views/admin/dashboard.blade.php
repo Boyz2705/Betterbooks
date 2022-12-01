@@ -254,12 +254,6 @@
             </div>
           </div>
           <ul class="navbar-nav  justify-content-end">
-            <li class="nav-item d-flex align-items-center">
-              <a href="javascript:;" class="nav-link text-body font-weight-bold px-0">
-                <i class="fa fa-user me-sm-1"></i>
-                <span class="d-sm-inline d-none">Sign In</span>
-              </a>
-            </li>
             <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
               <a href="javascript:;" class="nav-link text-body p-0" id="iconNavbarSidenav">
                 <div class="sidenav-toggler-inner">
@@ -267,11 +261,6 @@
                   <i class="sidenav-toggler-line"></i>
                   <i class="sidenav-toggler-line"></i>
                 </div>
-              </a>
-            </li>
-            <li class="nav-item px-3 d-flex align-items-center">
-              <a href="javascript:;" class="nav-link text-body p-0">
-                <i class="fa fa-cog fixed-plugin-button-nav cursor-pointer"></i>
               </a>
             </li>
             <li class="nav-item dropdown pe-2 d-flex align-items-center">
@@ -346,6 +335,11 @@
                   </a>
                 </li>
               </ul>
+              <li class="nav-item px-3 d-flex align-items-center">
+                <a href="javascript:;" class="nav-link text-body p-0">
+                  <i class="fa fa-user fixed-plugin-button-nav cursor-pointer">&nbsp; Profile</i>
+                </a>
+              </li>
             </li>
           </ul>
         </div>
@@ -360,10 +354,10 @@
               <div class="row">
                 <div class="col-8">
                   <div class="numbers">
-                    <p class="text-sm mb-0 text-capitalize font-weight-bold">Today's Money</p>
+                    <p class="text-sm mb-0 text-capitalize font-weight-bold">Jumlah Buku</p>
                     <h5 class="font-weight-bolder mb-0">
-                      $53,000
-                      <span class="text-success text-sm font-weight-bolder">+55%</span>
+                      {{ DB::table("bukus")->count() }}
+                      {{-- <span class="text-success text-sm font-weight-bolder">+55%</span> --}}
                     </h5>
                   </div>
                 </div>
@@ -382,10 +376,10 @@
               <div class="row">
                 <div class="col-8">
                   <div class="numbers">
-                    <p class="text-sm mb-0 text-capitalize font-weight-bold">Today's Users</p>
+                    <p class="text-sm mb-0 text-capitalize font-weight-bold">Jumlah User</p>
                     <h5 class="font-weight-bolder mb-0">
-                      2,300
-                      <span class="text-success text-sm font-weight-bolder">+3%</span>
+                      {{ DB::table("users")->count() }}
+                      {{-- <span class="text-success text-sm font-weight-bolder">+3%</span> --}}
                     </h5>
                   </div>
                 </div>
@@ -1007,8 +1001,15 @@
     <div class="card shadow-lg ">
       <div class="card-header pb-0 pt-3 ">
         <div class="float-start">
-          <h5 class="mt-3 mb-0">Soft UI Configurator</h5>
-          <p>See our dashboard options.</p>
+          <h5 class="mt-3 mb-0">Selamat Datang</h5>
+          <p>{{ Auth()->User()->email }}</p>
+          <form action="/logout" method="POST" class="nav-item d-flex align-items-center">
+            @csrf
+            <button type="submit" class="btn btn-danger">
+              <i class="fa fa-sign-out me-sm-1"></i>
+              <span class="d-sm-inline d-none">Log out</span>
+            </button>
+          </form> 
         </div>
         <div class="float-end mt-4">
           <button class="btn btn-link text-dark p-0 fixed-plugin-close-button">
@@ -1051,8 +1052,7 @@
           <input class="form-check-input mt-1 ms-auto" type="checkbox" id="navbarFixed" onclick="navbarFixed(this)">
         </div>
         <hr class="horizontal dark my-sm-4">
-        <a class="btn bg-gradient-dark w-100" href="https://www.creative-tim.com/product/soft-ui-dashboard-pro">Free Download</a>
-        <a class="btn btn-outline-dark w-100" href="https://www.creative-tim.com/learning-lab/bootstrap/license/soft-ui-dashboard">View documentation</a>
+               <a class="btn btn-outline-dark w-100" href="https://www.creative-tim.com/learning-lab/bootstrap/license/soft-ui-dashboard">View documentation</a>
         <div class="w-100 text-center">
           <a class="github-button" href="https://github.com/creativetimofficial/soft-ui-dashboard" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star creativetimofficial/soft-ui-dashboard on GitHub">Star</a>
           <h6 class="mt-3">Thank you for sharing!</h6>

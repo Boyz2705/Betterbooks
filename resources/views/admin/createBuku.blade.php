@@ -369,7 +369,7 @@
                           <input type="text" class="form-control" name="nama">
                         </div>
                         <div class="mb-3">
-                          <label for="harga" class="form-label">harga</label>
+                          <label for="harga" class="form-label">Harga</label>
                           <input type="text" class="form-control" name="harga">
                         </div>
                         <div class="mb-3">
@@ -379,6 +379,10 @@
                         <div class="mb-3">
                           <label for="tglMasuk" class="form-label">Tanggal Masuk</label>
                           <input type="text" class="form-control" name="tglMasuk">
+                        </div>
+                        <div class="mb-3">
+                          <label for="kategori" class="form-label">Kategori</label>
+                          <input type="text" class="form-control" name="kategori">
                         </div>
                         <div class="mb-3">
                           <label for="thnTerbit" class="form-label">Tahun Terbit</label>

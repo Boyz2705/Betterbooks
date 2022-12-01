@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Buku;
-use App\Http\Requests\StorebukuRequest;
-use App\Http\Requests\UpdatebukuRequest;
+// use App\Http\Requests\StorebukuRequest;
+// use App\Http\Requests\UpdatebukuRequest;
+use Illuminate\Http\Request;
 
 class BukuController extends Controller
 {
@@ -40,9 +41,10 @@ class BukuController extends Controller
      * @param  \App\Http\Requests\StorebukuRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StorebukuRequest $request)
+    public function store(Request $request)
     {
-        //
+        Buku::create($request->except(['_token','submit']));
+        return redirect('/Buku');
     }
 
     /**
@@ -69,6 +71,7 @@ class BukuController extends Controller
             return view('admin.editBuku', compact(['bukus']));
         }
     }
+    
 
     /**
      * Update the specified resource in storage.
@@ -77,7 +80,7 @@ class BukuController extends Controller
      * @param  \App\Models\buku  $buku
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdatebukuRequest $request, buku $buku)
+    public function update(Request $request)
     {
         {
             $bukus = Buku::find($request['Buks']);
@@ -86,11 +89,12 @@ class BukuController extends Controller
                 'nama'=>$request['nama'],
                 'harga'=>$request['harga'],
                 'tglMasuk'=>$request['tglMasuk'],
+                'kategori'=>$request['kategori'],
                 'thnTerbit'=>$request['thnTerbit']
             ]);
 
             $bukus->save();
-            return redirect('/tables');
+            return redirect('/Buku');
         }
     }
 

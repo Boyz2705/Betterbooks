@@ -11,7 +11,7 @@
 
     <!-- Title Page-->
     <title>BookstorePWBF</title>
-    <link rel="icon" type="image/x-icon" href="https://spesialis1.ikf.fk.unair.ac.id/wp-content/uploads/2019/02/logo-unair.png">
+    <link rel="icon" type="image/x-icon" href="images\Logo Universitas Airlangga (UNAIR).png">
 
     <!-- Icons font CSS-->
     <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">

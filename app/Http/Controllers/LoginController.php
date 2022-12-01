@@ -11,7 +11,7 @@ class LoginController extends Controller
     public function index(){
         if(Auth::user()){
             if(Auth::user()->role == 'admin'){
-                return redirect()->intended('/buku');
+                return redirect()->intended('/dashboard');
             }
             else if(Auth::user()->role == 'customer'){
                 return redirect()->intended('/index');
@@ -32,7 +32,7 @@ class LoginController extends Controller
             $request->session()->regenerate();
             // return redirect()->intended('/');
             if(Auth::user()->role == 'admin'){
-                return redirect()->intended('/buku');
+                return redirect()->intended('/dashboard');
             }
             else{
                 return redirect()->intended('/index');
@@ -45,9 +45,9 @@ class LoginController extends Controller
     {
         Auth::logout();
 
-        request()->session()->invalidate();
+        // request()->session()->invalidate();
 
-        request()->session()->regenerateToken();
+        // request()->session()->regenerateToken();
 
         return redirect()->intended('/login');
     }

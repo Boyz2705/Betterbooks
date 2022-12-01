@@ -6,7 +6,7 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>PWBF Bookstore</title>
-        <link rel="icon" type="image/x-icon" href="https://spesialis1.ikf.fk.unair.ac.id/wp-content/uploads/2019/02/logo-unair.png" />
+        <link rel="icon" type="image/x-icon" href="images\Logo Universitas Airlangga (UNAIR).png" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -28,6 +28,11 @@
 		<a class="btn text-light ms-6" href="/">Home</a>
 		<div class="container">
 			<div class="row justify-content-center">
+				@if (Session::has('alert'))
+					<div class="alert alert-success">
+						<p>{{ Session::get('success') }}</p>
+					</div>
+				@endif
 				<div class="col-md-6 text-center mb-5">
 					<h2 class="heading-section">Register</h2>
 				</div>

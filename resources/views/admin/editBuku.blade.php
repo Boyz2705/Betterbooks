@@ -8,20 +8,24 @@
       <input type="text" class="form-control" name="nama" value="{{ $bukus->nama }}">
     </div>
     <div class="mb-3">
-      <label for="email" class="form-label">Harga</label>
-      <input type="text" class="form-control" name="email" value="{{ $bukus->harga }}">
+      <label for="harga" class="form-label">Harga</label>
+      <input type="text" class="form-control" name="harga" value="{{ $bukus->harga }}">
     </div>
     <div class="mb-3">
       <label for="umur" class="form-label">Tanggal Masuk</label>
-      <input type="number" class="form-control" name="umur" value="{{ $bukus->tglMasuk }}">
+      <input type="text" class="form-control" name="umur" value="{{ $bukus->tglMasuk }}">
     </div>
     <div class="mb-3">
-        <label for="umur" class="form-label">Tanggal Masuk</label>
-        <input type="number" class="form-control" name="umur" value="{{ $bukus->tglMasuk }}">
+        <label for="kategori" class="form-label">kategori</label>
+        <input type="text" class="form-control" name="kategori" value="{{ $bukus->kategori }}">
       </div>
     <div class="mb-3">
-      <label for="umur" class="form-label">Tahun Terbit</label>
-      <input type="number" class="form-control" name="umur" value="{{ $bukus->thnTerbit }}">
+      <label for="thnTerbit" class="form-label">Tahun Terbit</label>
+      <input type="text" class="form-control" name="thnTerbit" value="{{ $bukus->thnTerbit }}">
+    </div>
+    <div class="mb-3">
+      <label for="image" class="form-label">Gambar</label>
+      <input type="file" class="form-control" name="image" value="{{ $bukus->image }}">
     </div>
     <input type="submit" name="submit" class="btn btn-primary" value="Save">
   </form>

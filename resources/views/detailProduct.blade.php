@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<title>BetterBooks</title>
-		<link rel="icon" type="image/x-icon" href="https://spesialis1.ikf.fk.unair.ac.id/wp-content/uploads/2019/02/logo-unair.png" />
+		<link rel="icon" type="image/x-icon" href="images\Logo Universitas Airlangga (UNAIR).png" />
 		<meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">

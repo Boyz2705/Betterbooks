@@ -6,6 +6,7 @@ use App\Http\Controllers\BukuController;
 use App\Http\Controllers\PenggunaController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\PagesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,23 +19,24 @@ use App\Http\Controllers\RegisterController;
 |
 */
 
-Route::get('/','App\Http\Controllers\PagesController@welcome');
-Route::get('/register','App\Http\Controllers\RegisterController@register');
-Route::post('/register','App\Http\Controllers\RegisterController@store');
-Route::get('/login','App\Http\Controllers\LoginController@index');
-Route::post('/login','App\Http\Controllers\LoginController@authenticate');
-Route::get('/forgot','App\Http\Controllers\PagesController@forgot');
-// Route::get('/account','App\Http\Controllers\PagesController@accPage');
-// Route::get('/book2','App\Http\Controllers\PagesController@book2Disp');
-// Route::get('/book3','App\Http\Controllers\PagesController@book3Disp');
-// Route::get('/book4','App\Http\Controllers\PagesController@book4Disp');
-// Route::get('/book5','App\Http\Controllers\PagesController@book5Disp');
-// Route::get('/book6','App\Http\Controllers\PagesController@book6Disp');
-// Route::get('/book7','App\Http\Controllers\PagesController@book7Disp');
-// Route::get('/book8','App\Http\Controllers\PagesController@book8Disp');
-// Route::get('/sign-in','App\Http\Controllers\PagesController@inAdmin');
-// Route::get('/sign-up','App\Http\Controllers\PagesController@upAdmin');
-// Route::get('/Buku','App\Http\Controllers\PagesController@BukuAdmin');
+Route::get('/',[PagesController::class,'welcome']);
+Route::get('/register',[RegisterController::class,'register']);
+Route::post('/register',[RegisterController::class,'store']);
+Route::get('/login',[LoginController::class,'index']);
+Route::post('/login',[LoginController::class,'authenticate']);
+Route::get('/forgot',[PagesController::class,'forgot']);
+Route::post('/logout',[LoginController::class,'logout']);
+// Route::get('/account',[PagesController::class,'accPage']);
+// Route::get('/book2',[PagesController::class,'book2Disp']);
+// Route::get('/book3',[PagesController::class,'book3Disp']);
+// Route::get('/book4',[PagesController::class,'book4Disp']);
+// Route::get('/book5',[PagesController::class,'book5Disp']);
+// Route::get('/book6',[PagesController::class,'book6Disp']);
+// Route::get('/book7',[PagesController::class,'book7Disp']);
+// Route::get('/book8',[PagesController::class,'book8Disp']);
+// Route::get('/sign-in',[PagesController::class,'inAdmin']);
+// Route::get('/sign-up',[PagesController::class,'upAdmin']);
+// Route::get('/Buku',[PagesController::class,'BukuAdmin']);
 
 
 
@@ -46,7 +48,6 @@ Route::group(['middleware' => 'auth'], function() {
         Route::get('/createPengguna',[PenggunaController::class,'create']);
         Route::post('/store',[PenggunaController::class,'store']);
         Route::get('admin/{id}/edit',[PenggunaController::class,'edit']);
-        // Route::get('admin/{id}',[PenggunaController::class,'update']);
         Route::post('admin-edit',[PenggunaController::class,'update']);
         Route::delete('admin/{id}',[PenggunaController::class,'destroy']);
 
@@ -57,17 +58,17 @@ Route::group(['middleware' => 'auth'], function() {
         Route::post('admin-editBuku',[BukuController::class,'update']);
         Route::delete('admin/{id}',[BukuController::class,'destroy']);
 
-        Route::get('/profile','App\Http\Controllers\PagesController@profileAdmin');
-        Route::get('/virtual-reality','App\Http\Controllers\PagesController@virtualRealtyAdmin');
-        Route::get('/rtl','App\Http\Controllers\PagesController@rtlAdmin');
-        Route::get('/dashboard','App\Http\Controllers\PagesController@dashboardAdmin');
+        Route::get('/profile',[PagesController::class,'profileAdmin']);
+        Route::get('/virtual-reality',[PagesController::class,'virtualRealtyAdmin']);
+        Route::get('/rtl',[PagesController::class,'rtlAdmin']);
+        Route::get('/dashboard',[PagesController::class,'dashboardAdmin']);
     });
 
     // Halaman yang bisa diakses oleh Customer
     Route::group(['middleware' => 'cekrole:customer'], function() {
-        Route::get('/index','App\Http\Controllers\BukuController@index');
-        Route::get('/book1','App\Http\Controllers\PagesController@book1Disp');
-        Route::get('/form','App\Http\Controllers\PagesController@formBuy');
+        Route::get('/index',[BukuController::class,'index']);
+        Route::get('/book1',[PagesController::class,'book1Disp']);
+        Route::get('/form',[PagesController::class,'formBuy']);
         Route::get('detailProduct/{id}',[BukuController::class,'detail']);
     });
 });
