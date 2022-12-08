@@ -16,6 +16,9 @@ class LoginController extends Controller
             else if(Auth::user()->role == 'customer'){
                 return redirect()->intended('/index');
             }
+            else{
+                return redirect()->with('alert','Silakan login terlebih dahulu!');
+            }
         }
         return view('login');
     }

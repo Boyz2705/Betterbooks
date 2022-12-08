@@ -46,17 +46,17 @@ Route::group(['middleware' => 'auth'], function() {
     Route::group(['middleware' => 'cekrole:admin'], function() {
         Route::get('/tables',[PenggunaController::class,'index']);
         Route::get('/createPengguna',[PenggunaController::class,'create']);
-        Route::post('/store',[PenggunaController::class,'store']);
-        Route::get('admin/{id}/edit',[PenggunaController::class,'edit']);
+        Route::post('user/store',[PenggunaController::class,'store']);
+        Route::get('admin/user/{id}/edit',[PenggunaController::class,'edit']);
         Route::post('admin-edit',[PenggunaController::class,'update']);
-        Route::delete('admin/{id}',[PenggunaController::class,'destroy']);
+        Route::delete('admin/user/{id}',[PenggunaController::class,'destroy']);
 
         Route::get('/Buku',[BukuController::class,'index2']);
         Route::get('/createBuku',[BukuController::class,'create']);
-        Route::get('admin/{id}/editBuku',[BukuController::class,'edit']);
-        Route::post('/store',[BukuController::class,'store']);
+        Route::get('admin/buku/{id}/editBuku',[BukuController::class,'edit']);
+        Route::post('buku/store',[BukuController::class,'store']);
         Route::post('admin-editBuku',[BukuController::class,'update']);
-        Route::delete('admin/{id}',[BukuController::class,'destroy']);
+        Route::delete('admin/buku/{id}',[BukuController::class,'destroy']);
 
         Route::get('/profile',[PagesController::class,'profileAdmin']);
         Route::get('/virtual-reality',[PagesController::class,'virtualRealtyAdmin']);

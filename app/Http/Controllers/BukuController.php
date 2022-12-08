@@ -22,7 +22,7 @@ class BukuController extends Controller
     public function index2()
     {
         $bukus = Buku::all();
-        return view('admin.Buku', compact(['bukus']));
+        return view('admin.buku.Buku', compact(['bukus']));
     }
 
     /**
@@ -32,7 +32,7 @@ class BukuController extends Controller
      */
     public function create()
     {
-        return view('admin.createBuku');
+        return view('admin.buku.createBuku');
     }
 
     /**
@@ -68,7 +68,7 @@ class BukuController extends Controller
     {
         {
             $bukus = Buku::find($id);
-            return view('admin.editBuku', compact(['bukus']));
+            return view('admin.buku.editBuku', compact(['bukus']));
         }
     }
     

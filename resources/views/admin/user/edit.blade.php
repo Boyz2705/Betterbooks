@@ -2,18 +2,14 @@
 <div class="container mt-5">
 <form action="/admin-edit" method="POST">
   <input type="hidden" name="idd" value="{{ $pgn->id }}">
-    {{ csrf_field() }}
-    <div class="mb-3">
-      <label for="nama" class="form-label">Nama</label>
-      <input type="text" class="form-control" name="nama" value="{{ $pgn->nama }}">
-    </div>
+    @csrf
     <div class="mb-3">
       <label for="email" class="form-label">E-Mail</label>
       <input type="text" class="form-control" name="email" value="{{ $pgn->email }}">
     </div>
     <div class="mb-3">
-      <label for="umur" class="form-label">Umur</label>
-      <input type="number" class="form-control" name="umur" value="{{ $pgn->umur }}">
+      <label for="password" class="form-label">Password</label>
+      <input type="text" class="form-control" name="password" value="{{ $pgn->password }}">
     </div>
     <input type="submit" name="submit" class="btn btn-primary" value="Save">
   </form>

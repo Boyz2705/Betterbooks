@@ -363,7 +363,7 @@
                 </div>
                 <div class="col-4 text-end">
                   <div class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
-                    <i class="ni ni-money-coins text-lg opacity-10" aria-hidden="true"></i>
+                    <i class="ni ni-books text-lg opacity-10" aria-hidden="true"></i>
                   </div>
                 </div>
               </div>
@@ -385,7 +385,7 @@
                 </div>
                 <div class="col-4 text-end">
                   <div class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
-                    <i class="ni ni-world text-lg opacity-10" aria-hidden="true"></i>
+                    <i class="ni ni-single-02 text-lg opacity-10" aria-hidden="true"></i>
                   </div>
                 </div>
               </div>
@@ -437,7 +437,7 @@
           </div>
         </div>
       </div>
-      <div class="row mt-4">
+      {{-- <div class="row mt-4">
         <div class="col-lg-7 mb-lg-0 mb-4">
           <div class="card">
             <div class="card-body p-3">
@@ -480,8 +480,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="row mt-4">
+      </div> --}}
+      {{-- <div class="row mt-4">
         <div class="col-lg-5 mb-lg-0 mb-4">
           <div class="card z-index-2">
             <div class="card-body p-3">
@@ -614,8 +614,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="row my-4">
+      </div> --}}
+      {{-- <div class="row my-4">
         <div class="col-lg-8 col-md-6 mb-md-0 mb-4">
           <div class="card">
             <div class="card-header pb-0">
@@ -959,8 +959,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <footer class="footer pt-3  ">
+      </div> --}}
+      <footer class="footer pt-3 ">
         <div class="container-fluid">
           <div class="row align-items-center justify-content-lg-between">
             <div class="col-lg-6 mb-lg-0 mb-4">

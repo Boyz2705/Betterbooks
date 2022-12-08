@@ -358,17 +358,17 @@
         <div class="col-12">
           <div class="card mb-4">
             <div class="card-header pb-0">
-              <h6>Tabel Pengguna</h6>
-              <a href="createPengguna" class="btn btn-primary">Create</a>
+              <h6>Tabel User</h6>
+              {{-- <a href="createPengguna" class="btn btn-primary">Create</a> --}}
             </div>
             <div class="card-body px-0 pt-0 pb-2">
               <div class="table-responsive p-0">
                 <table class="table align-items-center mb-0">
                   <thead>
                     <tr>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama dan Email</th>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Umur</th>
-                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">xxx</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Email</th>
+                      {{-- <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Umur</th> --}}
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Status</th>
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">ID</th>
                       <th class="text-secondary opacity-7"></th>
                     </tr>
@@ -382,15 +382,15 @@
                             <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3" alt="user1">
                           </div> --}}
                           <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">{{ $p->nama }}</h6>
-                            <p class="text-xs text-secondary mb-0">{{ $p->email }}</p>
+                            <h6 class="mb-0 text-sm">{{ $p->email }}</h6>
+                            {{-- <p class="text-xs text-secondary mb-0">{{ $p->email }}</p> --}}
                           </div>
                         </div>
                       </td>
-                      <td>
+                      {{-- <td>
                         <p class="text-xs font-weight-bold mb-0">{{ $p->umur }}</p>
                         <p class="text-xs text-secondary mb-0">xxx</p>
-                      </td>
+                      </td> --}}
                       <td class="align-middle text-center text-sm">
                         <span class="badge badge-sm bg-gradient-success">Online</span>
                       </td>
@@ -398,9 +398,9 @@
                         <span class="text-secondary text-xs font-weight-bold">{{ $p->id }}</span>
                       </td>
                       <td class="align-middle">
-                        <a type="submit" href="/admin/{{ $p->id }}/edit" class="btn btn-primary"> <i class="fa fa-pencil" aria-hidden="true"></i>
+                        <a type="submit" href="/admin/user/{{ $p->id }}/edit" class="btn btn-primary"> <i class="fa fa-pencil" aria-hidden="true"></i>
                         </a>
-                        <form class="d-inline" action="/admin/{{ $p->id }}" method="POST">
+                        <form class="d-inline" action="/admin/user/{{ $p->id }}" method="POST">
                           @csrf
                           @method('delete')
                           <button type="submit" class="btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i></button>

@@ -52,8 +52,9 @@
 
 	<div class="main-slider">
 		<div class="slider-item">
+			@foreach ($bukus as $b)
 			<div class="banner-content" data-aos="fade-up">
-				<h2 class="banner-title">Life of the wild</h2>
+				<h2 class="banner-title">{{ $b->nama }}</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet, libero ipsum enim pharetra hac. Urna commodo, lacus ut magna velit eleifend. Amet, quis urna, a eu.</p>
 				<div class="btn-wrap">
 					<a href="#" class="btn-outline-accent btn-accent-arrow">Read More<i class="icon icon-ns-arrow-right"></i></a>
@@ -61,6 +62,7 @@
 			</div><!--banner-content--> 
 			<a href=""><img src="images/main-banner1.jpg" alt="banner" class="banner-ima</a>ge">
 		</div><!--slider-item-->
+		@endforeach
 
 		<div class="slider-item">
 			<div class="banner-content">
@@ -112,7 +114,8 @@
 				<div class="row">
 					<div class="inner-content">	
 						<div class="product-list" data-aos="fade-up">
-							<div class="grid product-grid">				
+							<div class="grid product-grid">	
+
 								<figure class="product-style">
 									<img src="images/product-item5.jpg" alt="Books" class="product-item">
 									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">Add to Cart</button>
@@ -165,12 +168,14 @@
 										<p>Armor Ramsey</p>
 										<div class="item-price">$ 40.00</div>
 									</figcaption>
-								</figure>					
+								</figure>	
+
 							</div><!--grid-->
 						</div>
 					</div><!--inner-content-->
 				</div>
 			</div>
+
 			<div class="btn-wrap align-right">
 				<a href="#" class="btn-accent-arrow">View all products <i class="icon icon-ns-arrow-right"></i></a>
 			</div>

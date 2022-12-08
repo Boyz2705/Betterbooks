@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use App\Models\Pengguna;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Hash;
 
 class PenggunaController extends Controller
 {
@@ -15,8 +17,8 @@ class PenggunaController extends Controller
      */
     public function index()
     {
-        $pgn = Pengguna::all();
-        return view('admin.tables', compact(['pgn']));
+        $pgn = User::all();
+        return view('admin.user.tables', compact(['pgn']));
     }
 
     /**
@@ -26,7 +28,7 @@ class PenggunaController extends Controller
      */
     public function create()
     {
-        return view('admin.createPengguna');
+        return view('admin.user.createPengguna');
     }
 
     /**
@@ -37,7 +39,7 @@ class PenggunaController extends Controller
      */
     public function store(Request $request)
     {
-        Pengguna::create($request->except(['_token','submit']));
+        User::create($request->except(['_token','submit']));
         return redirect('/tables');
     }
 
@@ -60,8 +62,8 @@ class PenggunaController extends Controller
      */
     public function edit($id)
     {
-        $pgn = Pengguna::find($id);
-        return view('admin.edit', compact(['pgn']));
+        $pgn = User::find($id);
+        return view('admin.user.edit', compact(['pgn']));
     }
 
     /**
@@ -73,13 +75,13 @@ class PenggunaController extends Controller
      */
     public function update(Request $request)
     {
-        $pgn = Pengguna::find($request['idd']);
+        $pgn = User::find($request['idd']);
 
         $pgn->update([
-            'nama'=>$request['nama'],
             'email'=>$request['email'],
-            'umur'=>$request['umur']
+            'password'=>$request['password'],
         ]);
+        $pgn['password'] = Hash::make($pgn['password']);
         $pgn->save();
         return redirect('/tables');
     }
@@ -92,7 +94,7 @@ class PenggunaController extends Controller
      */
     public function destroy($id)
     {
-        $pgn = Pengguna::find($id);
+        $pgn = User::find($id);
         $pgn->delete();
 
         return redirect('/tables');

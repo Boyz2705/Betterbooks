@@ -49,8 +49,8 @@
 				<div class="col-lg-7 mt-5">
 					<div class="card">
 						<div class="card-body">
-							<h1 class="h2">{{ $buku->nama }}</h1>
-							<p class="h3 py-2">Rp {{ $buku->harga }}</p>
+							<h1 class="h1 text-dark">{{ $buku->nama }}</h1>
+							<p class="h3 py-2 text-dark">Rp {{ $buku->harga }}</p>
 							<p class="py-2">
 								{{-- <i class="fa fa-star text-warning"></i>
 								<i class="fa fa-star text-warning"></i>
@@ -104,7 +104,6 @@
 									</div>
 								</div>
 							</form>
-
 						</div>
 					</div>
 				</div>
@@ -114,15 +113,15 @@
 
 
     <script src="assets/js/jquery-1.11.0.min.js"></script>
-        <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/js/templatemo.js"></script>
-        <script src="assets/js/custom.js"></script>
-        <script src="js/jquery-1.11.0.min.js"></script>
-        <script src="js/slideNav.min.js"></script>
-        <script src="js/slideNav.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/script.js"></script>
+        <script src="{{ asset('assets/js/jquery-migrate-1.2.1.min.js') }}"></script>
+        <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
+        <script src="{{ asset('assets/js/templatemo.js') }}"></script>
+        <script src="{{ asset('assets/js/custom.js') }}"></script>
+        <script src="{{ asset('js/jquery-1.11.0.min.js') }}"></script>
+        <script src="{{ asset('js/slideNav.min.js') }}"></script>
+        <script src="{{ asset('js/slideNav.js') }}"></script>
+        <script src="{{ asset('js/plugins.js') }}"></script>
+        <script src="{{ asset('js/script.js') }}"></script>
 
 </body>
 </html>

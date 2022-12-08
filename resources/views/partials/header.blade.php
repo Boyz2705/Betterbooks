@@ -52,14 +52,14 @@
 
 					<nav id="navbar">
 						<div class="main-menu">
-							<ul class="menu-list">
+							{{-- <ul class="menu-list">
 								<li class="menu-item active"><a href="/">Home</a></li>
-								{{-- <li class="menu-item"><a href="#about" class="nav-link" data-effect="About">About</a></li>
+								<li class="menu-item"><a href="#about" class="nav-link" data-effect="About">About</a></li>
 								<li class="menu-item"><a href="#pages" class="nav-link" data-effect="Pages">Pages</a></li>
 								<li class="menu-item"><a href="#shop" class="nav-link" data-effect="Shop">Shop</a></li>
 								<li class="menu-item"><a href="#articles" class="nav-link" data-effect="Articles">Articles</a></li>
-								<li class="menu-item"><a href="#contact" class="nav-link" data-effect="Contact">Contact</a></li> --}}
-							</ul>
+								<li class="menu-item"><a href="#contact" class="nav-link" data-effect="Contact">Contact</a></li>
+							</ul> --}}
 
 							<div class="hamburger">
 				                <span class="bar"></span>
