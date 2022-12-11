@@ -266,7 +266,7 @@
                   </g>
                 </svg>
               </div>
-              <span class="nav-link-text ms-1">RTL</span>
+              <span class="nav-link-text ms-1">Kategori</span>
             </a>
           </li>
           <li class="nav-item mt-3">

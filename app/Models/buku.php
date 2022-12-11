@@ -2,12 +2,18 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Models\kategoriBuku;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Buku extends Model
 {
     use HasFactory;
 
-    protected $guarded=['id'];
+    protected $fillable=['nama','harga','tglMasuk','kategori_buku_id','thnTerbit','image'];
+
+    public function kategoriBuku()
+    {
+        return $this->belongsTo(kategoriBuku::class);
+    }
 }

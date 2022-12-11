@@ -2,7 +2,7 @@
 <div class="container mt-5">
 <form action="/admin-editBuku" method="POST">
   <input type="hidden" name="Buks" value="{{ $bukus->id }}">
-    {{ csrf_field() }}
+    @csrf
     <div class="mb-3">
       <label for="nama" class="form-label">Nama</label>
       <input type="text" class="form-control" name="nama" value="{{ $bukus->nama }}">
@@ -12,13 +12,17 @@
       <input type="text" class="form-control" name="harga" value="{{ $bukus->harga }}">
     </div>
     <div class="mb-3">
-      <label for="umur" class="form-label">Tanggal Masuk</label>
-      <input type="text" class="form-control" name="umur" value="{{ $bukus->tglMasuk }}">
+      <label for="tglMasuk" class="form-label">Tanggal Masuk</label>
+      <input type="text" class="form-control" name="tglMasuk" value="{{ $bukus->tglMasuk }}">
     </div>
     <div class="mb-3">
-        <label for="kategori" class="form-label">kategori</label>
-        <input type="text" class="form-control" name="kategori" value="{{ $bukus->kategori }}">
-      </div>
+      <label for="kategori_buku_id" class="form-label">Kategori</label>
+      <select name="kategori_buku_id" class="form-control" id="exampleFormControlSelect1">
+        @foreach ($categories as $c)
+        <option value="{{ $c->id }}">{{ $c->namaKategori }}</option>
+        @endforeach
+      </select>
+    </div>
     <div class="mb-3">
       <label for="thnTerbit" class="form-label">Tahun Terbit</label>
       <input type="text" class="form-control" name="thnTerbit" value="{{ $bukus->thnTerbit }}">

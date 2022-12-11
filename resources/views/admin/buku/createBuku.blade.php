@@ -69,7 +69,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link  active" href="/tables">
+          <a class="nav-link  " href="/tables">
             <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
               <svg width="12px" height="12px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <title>office</title>
@@ -89,7 +89,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link  " href="/billing">
+          <a class="nav-link  active" href="/Buku">
             <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
               <svg width="12px" height="12px" viewBox="0 0 43 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <title>credit-card</title>
@@ -105,7 +105,7 @@
                 </g>
               </svg>
             </div>
-            <span class="nav-link-text ms-1">Billing</span>
+            <span class="nav-link-text ms-1">Buku</span>
           </a>
         </li>
         <li class="nav-item">
@@ -242,9 +242,9 @@
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
             <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">Pages</a></li>
-            <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Tables</li>
+            <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Buku</li>
           </ol>
-          <h6 class="font-weight-bolder mb-0">Tables</h6>
+          <h6 class="font-weight-bolder mb-0">Buku</h6>
         </nav>
         <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
           <div class="ms-md-auto pe-md-3 d-flex align-items-center">
@@ -363,7 +363,7 @@
               <div class="table-responsive px-6">
                 <table class="table align-items-center mb-0">
                     <form action={{ url('/buku/store') }} method="POST">
-                        {{ csrf_field() }}
+                        @csrf
                         <div class="mb-3">
                           <label for="nama" class="form-label">Nama</label>
                           <input type="text" class="form-control" name="nama">
@@ -381,8 +381,12 @@
                           <input type="text" class="form-control" name="tglMasuk">
                         </div>
                         <div class="mb-3">
-                          <label for="kategori" class="form-label">Kategori</label>
-                          <input type="text" class="form-control" name="kategori">
+                          <label for="kategori_buku_id" class="form-label">Kategori</label>
+                          <select name="kategori_buku_id" class="form-control" id="exampleFormControlSelect1">
+                            @foreach ($categories as $c)
+                            <option value="{{ $c->id }}">{{ $c->namaKategori }}</option>
+                            @endforeach
+                          </select>
                         </div>
                         <div class="mb-3">
                           <label for="thnTerbit" class="form-label">Tahun Terbit</label>

@@ -147,7 +147,7 @@
                 </g>
               </svg>
             </div>
-            <span class="nav-link-text ms-1">RTL</span>
+            <span class="nav-link-text ms-1">Kategori</span>
           </a>
         </li>
         <li class="nav-item mt-3">
@@ -972,6 +972,7 @@
                 <a href="https://www.creative-tim.com" class="font-weight-bold" target="_blank">Creative Tim</a>
                 for a better web.
               </div>
+              <a class="copyright text-center text-sm text-muted text-lg-start">Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})</a>
             </div>
             <div class="col-lg-6">
               <ul class="nav nav-footer justify-content-center justify-content-lg-end">

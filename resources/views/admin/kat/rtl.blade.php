@@ -90,7 +90,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link  active" href="/Buku">
+            <a class="nav-link  " href="/Buku">
               <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
                 <svg width="12px" height="12px" viewBox="0 0 43 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <title>credit-card</title>
@@ -132,9 +132,8 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link  " href="/rtl
-            ">
-              <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+            <a class="nav-link active" href="/rtl">
+              <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center ms-2 d-flex align-items-center justify-content-center">
                 <svg width="12px" height="12px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <title>settings</title>
                   <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -150,7 +149,7 @@
                   </g>
                 </svg>
               </div>
-              <span class="nav-link-text ms-1">Kategori</span>
+              <span class="nav-link-text me-1">Kategori</span>
             </a>
           </li>
           <li class="nav-item mt-3">
@@ -248,9 +247,9 @@
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
               <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">Pages</a></li>
-              <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Buku</li>
+              <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Kategori</li>
             </ol>
-            <h6 class="font-weight-bolder mb-0">Buku</h6>
+            <h6 class="font-weight-bolder mb-0">Kategori</h6>
           </nav>
           <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
             <div class="ms-md-auto pe-md-3 d-flex align-items-center">
@@ -363,56 +362,57 @@
           <div class="col-12">
             <div class="card mb-4">
               <div class="card-header pb-0">
-                <h6>Tabel Buku</h6>
-                <a href="createBuku" class="btn btn-primary">Create</a>
+                <h6>Tabel Kategori</h6>
+                <a href="createKategori" class="btn btn-primary">Create</a>
               </div>
               <div class="card-body px-0 pt-0 pb-2">
                 <div class="table-responsive p-0">
                   <table class="table align-items-center mb-0">
                     <thead>
                       <tr>
-                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama Buku dan Gambar</th>
-                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Tanggal Masuk</th>
-                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Harga</th>
-                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Tahun Terbit</th>
-                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Kategori</th>
+                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nama Kategori</th>
+                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">ID</th>
                       </tr>
                     </thead>
                     <tbody>
-                      @foreach($bukus as $p)
+                      @foreach($categories as $c)
                       <tr>
                         <td>
                           <div class="d-flex px-2 py-1">
-                            <div>
+                            {{-- <div>
                               <img src="images/{{ $p->image }}" class="avatar avatar-sm me-3" alt="user1">
-                            </div>
+                            </div> --}}
                             <div class="d-flex flex-column justify-content-center">
-                              <h6 class="mb-0 text-sm">{{ $p->nama }}</h6>
+                              <h6 class="mb-0 text-sm">{{ $c->namaKategori }}</h6>
                             </div>
                           </div>
                         </td>
                         <td>
-                          <p class="text-xs font-weight-bold mb-0">{{ $p->tglMasuk }}</p>
+                          <p class="text-xs font-weight-bold mb-0">{{ $c->id }}</p>
                           {{-- <p class="text-xs text-secondary mb-0">xxx</p> --}}
                         </td>
-                        <td class="align-middle text-center text-sm">
-                          <span class="badge badge-sm bg-gradient-success">Rp {{ $p->harga }}</span>
-                        </td>
-                        <td class="align-middle text-center">
-                          <span class="text-secondary text-xs font-weight-bold">{{ $p->thnTerbit }}</span>
-                        </td>
-                        <td class="align-middle text-center">
-                          <span class="text-secondary text-xs font-weight-bold">{{ $p->kategoriBuku->namaKategori }}</span>
-                        </td>
                         <td class="align-middle">
-                          <a type="submit" href="/admin/buku/{{ $p->id }}/editBuku" class="btn btn-primary"> <i class="fa fa-pencil" aria-hidden="true"></i>
-                          </a>
-                          <form class="d-inline" action="/admin/buku/{{ $p->id }}" method="POST">
+                          <form class="d-inline" action="/admin/kat/{{ $c->id }}" method="POST">
                             @csrf
                             @method('delete')
                             <button type="submit" class="btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
                           </form>
                         </td>
+                        {{-- <td class="align-middle text-center text-sm">
+                          <span class="badge badge-sm bg-gradient-success">Rp {{ $p->harga }}</span>
+                        </td>
+                        <td class="align-middle text-center">
+                          <span class="text-secondary text-xs font-weight-bold">{{ $p->thnTerbit }}</span>
+                        </td>
+                        <td class="align-middle">
+                          <a type="submit" href="/admin/{{ $p->id }}/editBuku" class="btn btn-primary"> <i class="fa fa-pencil" aria-hidden="true"></i>
+                          </a>
+                          <form class="d-inline" action="/admin/{{ $p->id }}" method="POST">
+                            @csrf
+                            @method('delete')
+                            <button type="submit" class="btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                          </form>
+                        </td> --}}
                       </tr>
                       @endforeach
                     </tbody>
@@ -422,6 +422,7 @@
             </div>
           </div>
         </div>
+    <div class="fixed-plugin">
     <div class="fixed-plugin">
       <a class="fixed-plugin-button text-dark position-fixed px-3 py-2">
         <i class="fa fa-cog py-2"> </i>

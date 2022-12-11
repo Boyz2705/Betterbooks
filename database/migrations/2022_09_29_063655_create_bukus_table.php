@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('nama');
             $table->string('harga');
             $table->string('tglMasuk');
-            $table->string('kategori');
+            $table->string('kategori_buku_id');
             $table->string('thnTerbit');
             $table->string('image');
             $table->timestamps();

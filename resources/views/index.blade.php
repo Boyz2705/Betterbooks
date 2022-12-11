@@ -102,7 +102,7 @@
 							<button class="add-to-cart"><a href="/detailProduct/{{ $buku->id }}" style="color: #fff">Buy Now</a></button>
 							<figcaption>
 								<h3>{{ $buku->nama }}</h3>
-								<p>{{ $buku->tglMasuk }}</p>
+								<p>{{ $buku->kategoriBuku->namaKategori }}</p>
 								<div class="item-price">Rp {{ $buku->harga }}</div>
 							</figcaption>
 						</figure>

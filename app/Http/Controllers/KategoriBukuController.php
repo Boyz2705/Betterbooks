@@ -1,13 +1,12 @@
-i<?php
+<?php
 
 namespace App\Http\Controllers;
 
-use App\Models\kategoriBuku;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\StorekategoriBukuRequest;
-use App\Http\Requests\UpdatekategoriBukuRequest;
+use App\Models\kategoriBuku;
+use Illuminate\Http\Request;
 
-class KategoriBukuController extends Controller
+class kategoriBukuController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,7 +15,8 @@ class KategoriBukuController extends Controller
      */
     public function index()
     {
-        //
+        $categories = kategoriBuku::all();
+        return view('admin.kat.rtl',compact('categories'));
     }
 
     /**
@@ -26,27 +26,29 @@ class KategoriBukuController extends Controller
      */
     public function create()
     {
-        //
+        $categories = kategoriBuku::all();
+        return view('admin.kat.createKategori',compact('categories'));
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StorekategoriBukuRequest  $request
+     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StorekategoriBukuRequest $request)
+    public function store(Request $request)
     {
-        //
+        kategoriBuku::create($request->except(['_token','submit']));
+        return redirect('/rtl');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\kategoriBuku  $kategoriBuku
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(kategoriBuku $kategoriBuku)
+    public function show($id)
     {
         //
     }
@@ -54,10 +56,10 @@ class KategoriBukuController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\kategoriBuku  $kategoriBuku
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(kategoriBuku $kategoriBuku)
+    public function edit($id)
     {
         //
     }
@@ -65,11 +67,11 @@ class KategoriBukuController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdatekategoriBukuRequest  $request
-     * @param  \App\Models\kategoriBuku  $kategoriBuku
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdatekategoriBukuRequest $request, kategoriBuku $kategoriBuku)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -77,11 +79,14 @@ class KategoriBukuController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\kategoriBuku  $kategoriBuku
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(kategoriBuku $kategoriBuku)
+    public function destroy($id)
     {
-        //
+        $categories = kategoriBuku::find($id);
+        $categories->delete();
+
+        return redirect('/rtl');
     }
 }

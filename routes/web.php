@@ -3,10 +3,11 @@
 use Database\Seeders\PenggunaSeeder;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BukuController;
-use App\Http\Controllers\PenggunaController;
 use App\Http\Controllers\LoginController;
-use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\PenggunaController;
+use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\kategoriBukuController;
 
 /*
 |--------------------------------------------------------------------------
@@ -51,6 +52,11 @@ Route::group(['middleware' => 'auth'], function() {
         Route::post('admin-edit',[PenggunaController::class,'update']);
         Route::delete('admin/user/{id}',[PenggunaController::class,'destroy']);
 
+        Route::get('/rtl',[kategoriBukuController::class,'index']);
+        Route::get('/createKategori',[kategoriBukuController::class,'create']);
+        Route::post('kat/store',[kategoriBukuController::class,'store']);
+        Route::delete('admin/kat/{id}',[kategoriBukuController::class,'destroy']);
+
         Route::get('/Buku',[BukuController::class,'index2']);
         Route::get('/createBuku',[BukuController::class,'create']);
         Route::get('admin/buku/{id}/editBuku',[BukuController::class,'edit']);
@@ -60,7 +66,7 @@ Route::group(['middleware' => 'auth'], function() {
 
         Route::get('/profile',[PagesController::class,'profileAdmin']);
         Route::get('/virtual-reality',[PagesController::class,'virtualRealtyAdmin']);
-        Route::get('/rtl',[PagesController::class,'rtlAdmin']);
+        // Route::get('/rtl',[PagesController::class,'rtlAdmin']);
         Route::get('/dashboard',[PagesController::class,'dashboardAdmin']);
     });
 
@@ -68,7 +74,7 @@ Route::group(['middleware' => 'auth'], function() {
     Route::group(['middleware' => 'cekrole:customer'], function() {
         Route::get('/index',[BukuController::class,'index']);
         Route::get('/book1',[PagesController::class,'book1Disp']);
-        Route::get('/form',[PagesController::class,'formBuy']);
+        Route::get('/form',[BukuController::class,'checkout']);
         Route::get('detailProduct/{id}',[BukuController::class,'detail']);
     });
 });

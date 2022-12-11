@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Buku;
+use App\Models\buku;
+use App\Models\kategoriBuku;
 // use App\Http\Requests\StorebukuRequest;
 // use App\Http\Requests\UpdatebukuRequest;
 use Illuminate\Http\Request;
@@ -16,13 +17,15 @@ class BukuController extends Controller
      */
     public function index()
     {
-        return view('index', ['bukus' => Buku::all()]);
+        return view('index', ['bukus' => buku::all()]);
     }
 
     public function index2()
     {
-        $bukus = Buku::all();
-        return view('admin.buku.Buku', compact(['bukus']));
+        // $bukus = Buku::all();
+        // return view('admin.buku.Buku', compact(['bukus']));
+        $bukus = buku::with('kategoriBuku')->get();
+        return view('admin.buku.Buku',compact('bukus'));
     }
 
     /**
@@ -32,7 +35,8 @@ class BukuController extends Controller
      */
     public function create()
     {
-        return view('admin.buku.createBuku');
+        $categories = kategoriBuku::all();
+        return view('admin.buku.createBuku',compact('categories'));
     }
 
     /**
@@ -43,7 +47,7 @@ class BukuController extends Controller
      */
     public function store(Request $request)
     {
-        Buku::create($request->except(['_token','submit']));
+        buku::create($request->except(['_token','submit']));
         return redirect('/Buku');
     }
 
@@ -55,7 +59,7 @@ class BukuController extends Controller
      */
     function detail($id)
     {
-        $data = Buku::find($id);
+        $data = buku::find($id);
         return view('detailProduct',['buku'=>$data]) ;
     }
     /**
@@ -67,8 +71,9 @@ class BukuController extends Controller
     public function edit($id)
     {
         {
-            $bukus = Buku::find($id);
-            return view('admin.buku.editBuku', compact(['bukus']));
+            $bukus = buku::find($id);
+            $categories = kategoriBuku::all();
+            return view('admin.buku.editBuku', compact(['bukus','categories']));
         }
     }
     
@@ -83,14 +88,15 @@ class BukuController extends Controller
     public function update(Request $request)
     {
         {
-            $bukus = Buku::find($request['Buks']);
+            $bukus = buku::find($request['Buks']);
     
             $bukus->update([
                 'nama'=>$request['nama'],
                 'harga'=>$request['harga'],
                 'tglMasuk'=>$request['tglMasuk'],
-                'kategori'=>$request['kategori'],
-                'thnTerbit'=>$request['thnTerbit']
+                'kategori_buku_id'=>$request['kategori_buku_id'],
+                'thnTerbit'=>$request['thnTerbit'],
+                'image'=>$request['image'],
             ]);
 
             $bukus->save();
@@ -106,9 +112,14 @@ class BukuController extends Controller
      */
     public function destroy($id)
     {
-        $bukus = Buku::find($id);
+        $bukus = buku::find($id);
         $bukus->delete();
 
         return redirect('/Buku');
+    }
+
+    public function checkout()
+    {
+        return view('/form');
     }
 }
