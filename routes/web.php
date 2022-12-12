@@ -8,6 +8,8 @@ use App\Http\Controllers\PagesController;
 use App\Http\Controllers\PenggunaController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\kategoriBukuController;
+use App\Http\Controllers\TransaksiController;
+use App\Models\Transaksi;
 
 /*
 |--------------------------------------------------------------------------
@@ -74,8 +76,10 @@ Route::group(['middleware' => 'auth'], function() {
     Route::group(['middleware' => 'cekrole:customer'], function() {
         Route::get('/index',[BukuController::class,'index']);
         Route::get('/book1',[PagesController::class,'book1Disp']);
-        Route::get('/form',[BukuController::class,'checkout']);
         Route::get('detailProduct/{id}',[BukuController::class,'detail']);
+        Route::get('/form/{id}',[BukuController::class,'checkout']);
+        Route::post('/customer-buy',[TransaksiController::class,'customerBuy']);
+        // Route::get('/invoice/{id}',[TransaksiController::class,'invoice']);
     });
 });
 

@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<title>BetterBooks</title>
-		<link rel="icon" type="image/x-icon" href="images\Logo Universitas Airlangga (UNAIR).png" />
+		<link rel="icon" type="image/x-icon" href="{{ asset('images\Logo Universitas Airlangga (UNAIR).png') }}" />
 		<meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -50,7 +50,7 @@
 					<div class="card">
 						<div class="card-body">
 							<h1 class="h1 text-dark">{{ $buku->nama }}</h1>
-							<p class="h3 py-2 text-dark">Rp {{ $buku->harga }}</p>
+							<p class="h3 py-2 text-dark">Rp {{ number_format($buku->harga) }}</p>
 							<p class="py-2">
 								{{-- <i class="fa fa-star text-warning"></i>
 								<i class="fa fa-star text-warning"></i>
@@ -100,7 +100,7 @@
 								</div>
 								<div class="row pb-3">
 									<div class="col d-grid">
-										<a href="/form"><button type="submit" class="btn btn-success btn-lg" name="submit" value="buy">Buy</button></a>
+										<a href="/form/{{ $buku->id }}"><button type="submit" class="btn btn-success btn-lg" name="submit" value="buy">Buy</button></a>
 									</div>
 								</div>
 							</form>

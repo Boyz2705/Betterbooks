@@ -16,9 +16,9 @@ return new class extends Migration
         Schema::create('bukus', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
-            $table->string('harga');
+            $table->bigInteger('harga');
             $table->string('tglMasuk');
-            $table->string('kategori_buku_id');
+            $table->bigInteger('kategori_buku_id');
             $table->string('thnTerbit');
             $table->string('image');
             $table->timestamps();

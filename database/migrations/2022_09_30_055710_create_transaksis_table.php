@@ -15,6 +15,10 @@ return new class extends Migration
     {
         Schema::create('transaksis', function (Blueprint $table) {
             $table->id();
+            $table->string('nama');
+            $table->string('email');
+            $table->bigInteger('harga');
+            $table->enum('status',['Unpaid','Paid']);
             $table->timestamps();
         });
     }

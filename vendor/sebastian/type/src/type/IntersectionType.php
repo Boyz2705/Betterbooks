@@ -18,7 +18,7 @@ use function sort;
 final class IntersectionType extends Type
 {
     /**
-     * @psalm-var non-empty-list<Type>
+     * @psalm-var list<Type>
      */
     private $types;
 
@@ -62,20 +62,9 @@ final class IntersectionType extends Type
         return false;
     }
 
-    /**
-     * @psalm-assert-if-true IntersectionType $this
-     */
     public function isIntersection(): bool
     {
         return true;
-    }
-
-    /**
-     * @psalm-return non-empty-list<Type>
-     */
-    public function types(): array
-    {
-        return $this->types;
     }
 
     /**

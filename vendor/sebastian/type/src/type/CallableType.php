@@ -84,9 +84,6 @@ final class CallableType extends Type
         return $this->allowsNull;
     }
 
-    /**
-     * @psalm-assert-if-true CallableType $this
-     */
     public function isCallable(): bool
     {
         return true;

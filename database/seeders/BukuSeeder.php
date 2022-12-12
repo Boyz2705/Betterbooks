@@ -17,12 +17,6 @@ class BukuSeeder extends Seeder
      */
     public function run()
     {
-        // Buku::create([
-        //     'nama' => Str::random(10),
-        //     'harga' => 90000,
-        //     'tglMasuk' => '10-10-2022',
-        //     'thnTerbit' => '2020',
-        //     'kategori' => 'sedih',
-        // ]);
+        
     }
 }

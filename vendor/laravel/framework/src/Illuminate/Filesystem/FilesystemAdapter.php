@@ -92,13 +92,10 @@ class FilesystemAdapter implements CloudFilesystemContract
         $this->driver = $driver;
         $this->adapter = $adapter;
         $this->config = $config;
-        $separator = $config['directory_separator'] ?? DIRECTORY_SEPARATOR;
 
-        $this->prefixer = new PathPrefixer($config['root'] ?? '', $separator);
-
-        if (isset($config['prefix'])) {
-            $this->prefixer = new PathPrefixer($this->prefixer->prefixPath($config['prefix']), $separator);
-        }
+        $this->prefixer = new PathPrefixer(
+            $config['root'] ?? '', $config['directory_separator'] ?? DIRECTORY_SEPARATOR
+        );
     }
 
     /**
@@ -620,10 +617,6 @@ class FilesystemAdapter implements CloudFilesystemContract
      */
     public function url($path)
     {
-        if (isset($this->config['prefix'])) {
-            $path = $this->concatPathToUrl($this->config['prefix'], $path);
-        }
-
         $adapter = $this->adapter;
 
         if (method_exists($adapter, 'getUrl')) {

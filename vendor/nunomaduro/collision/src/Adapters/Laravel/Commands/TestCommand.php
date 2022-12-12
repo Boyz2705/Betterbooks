@@ -210,8 +210,6 @@ class TestCommand extends Command
 
         $options = array_values(array_filter($options, function ($option) {
             return ! Str::startsWith($option, '--env=')
-                && $option != '-q'
-                && $option != '--quiet'
                 && $option != '--coverage'
                 && ! Str::startsWith($option, '--min');
         }));
@@ -234,8 +232,6 @@ class TestCommand extends Command
         $options = array_values(array_filter($options, function ($option) {
             return ! Str::startsWith($option, '--env=')
                 && $option != '--coverage'
-                && $option != '-q'
-                && $option != '--quiet'
                 && ! Str::startsWith($option, '--min')
                 && ! Str::startsWith($option, '-p')
                 && ! Str::startsWith($option, '--parallel')

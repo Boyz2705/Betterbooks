@@ -103,7 +103,7 @@
 							<figcaption>
 								<h3>{{ $buku->nama }}</h3>
 								<p>{{ $buku->kategoriBuku->namaKategori }}</p>
-								<div class="item-price">Rp {{ $buku->harga }}</div>
+								<div class="item-price">Rp {{ number_format($buku->harga) }}</div>
 							</figcaption>
 						</figure>
 					@endforeach

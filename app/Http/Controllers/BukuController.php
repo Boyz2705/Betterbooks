@@ -3,9 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\buku;
-use App\Models\kategoriBuku;
+use App\Models\User;
 // use App\Http\Requests\StorebukuRequest;
 // use App\Http\Requests\UpdatebukuRequest;
+use App\Models\kategoriBuku;
 use Illuminate\Http\Request;
 
 class BukuController extends Controller
@@ -118,8 +119,10 @@ class BukuController extends Controller
         return redirect('/Buku');
     }
 
-    public function checkout()
+    public function checkout($id)
     {
-        return view('/form');
+        $data = buku::find($id);
+        $pgn = Auth()->User();
+        return view('form',['buku'=>$data],['pgn'=>$pgn]);
     }
 }

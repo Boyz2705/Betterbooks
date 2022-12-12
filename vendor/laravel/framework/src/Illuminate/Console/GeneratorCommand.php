@@ -182,7 +182,7 @@ abstract class GeneratorCommand extends Command
             }
         }
 
-        $this->components->info(sprintf('%s [%s] created successfully.', $info, $path));
+        $this->components->info($info.' created successfully.');
     }
 
     /**
@@ -355,7 +355,7 @@ abstract class GeneratorCommand extends Command
      */
     protected function sortImports($stub)
     {
-        if (preg_match('/(?P<imports>(?:^use [^;{]+;$\n?)+)/m', $stub, $match)) {
+        if (preg_match('/(?P<imports>(?:use [^;{]+;$\n?)+)/m', $stub, $match)) {
             $imports = explode("\n", trim($match['imports']));
 
             sort($imports);
