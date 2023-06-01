@@ -19,7 +19,6 @@ return array(
     'App\\Http\\Controllers\\PreOrderController' => $baseDir . '/app/Http/Controllers/PreOrderController.php',
     'App\\Http\\Controllers\\RegisterController' => $baseDir . '/app/Http/Controllers/RegisterController.php',
     'App\\Http\\Controllers\\TransaksiController' => $baseDir . '/app/Http/Controllers/TransaksiController.php',
-    'App\\Http\\Controllers\\kategoriBukuController' => $baseDir . '/app/Http/Controllers/kategoriBukuController.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
     'App\\Http\\Middleware\\Authenticate' => $baseDir . '/app/Http/Middleware/Authenticate.php',
     'App\\Http\\Middleware\\CekRole' => $baseDir . '/app/Http/Middleware/CekRole.php',

@@ -512,7 +512,6 @@ class ComposerStaticInit014f946a668c6fc37af18beb395f8df8
         'App\\Http\\Controllers\\PreOrderController' => __DIR__ . '/../..' . '/app/Http/Controllers/PreOrderController.php',
         'App\\Http\\Controllers\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/RegisterController.php',
         'App\\Http\\Controllers\\TransaksiController' => __DIR__ . '/../..' . '/app/Http/Controllers/TransaksiController.php',
-        'App\\Http\\Controllers\\kategoriBukuController' => __DIR__ . '/../..' . '/app/Http/Controllers/kategoriBukuController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\CekRole' => __DIR__ . '/../..' . '/app/Http/Middleware/CekRole.php',

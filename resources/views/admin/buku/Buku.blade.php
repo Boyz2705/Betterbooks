@@ -391,7 +391,7 @@
                           {{-- <p class="text-xs text-secondary mb-0">xxx</p> --}}
                         </td>
                         <td class="align-middle text-center text-sm">
-                          <span class="badge badge-sm bg-gradient-success">Rp {{ $p->harga }}</span>
+                          <span class="badge badge-sm bg-gradient-success">Rp {{ number_format($p->harga) }}</span>
                         </td>
                         <td class="align-middle text-center">
                           <span class="text-secondary text-xs font-weight-bold">{{ $p->thnTerbit }}</span>

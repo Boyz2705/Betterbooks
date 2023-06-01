@@ -87,7 +87,7 @@
                 onSuccess: function(result){
                     /* You may add your own implementation here */
                     alert("payment success!");
-                    // window.location.href = '/invoice/{{ $transaksi->id }}'
+                    window.location.href = '/invoice/{{ $transaksi->id }}'
                     console.log(result);
                 },
                 onPending: function(result){
@@ -106,7 +106,7 @@
         });
     </script>
     
-    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="{{ asset('assets/js/jquery-1.11.0.min.js') }}"></script>
     <script src="{{ asset('assets/js/jquery-migrate-1.2.1.min.js') }}"></script>
     <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('assets/js/templatemo.js') }}"></script>

@@ -1,6 +1,5 @@
 <?php
 
-use Database\Seeders\PenggunaSeeder;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BukuController;
 use App\Http\Controllers\LoginController;
@@ -9,7 +8,6 @@ use App\Http\Controllers\PenggunaController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\kategoriBukuController;
 use App\Http\Controllers\TransaksiController;
-use App\Models\Transaksi;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,17 +27,6 @@ Route::get('/login',[LoginController::class,'index']);
 Route::post('/login',[LoginController::class,'authenticate']);
 Route::get('/forgot',[PagesController::class,'forgot']);
 Route::post('/logout',[LoginController::class,'logout']);
-// Route::get('/account',[PagesController::class,'accPage']);
-// Route::get('/book2',[PagesController::class,'book2Disp']);
-// Route::get('/book3',[PagesController::class,'book3Disp']);
-// Route::get('/book4',[PagesController::class,'book4Disp']);
-// Route::get('/book5',[PagesController::class,'book5Disp']);
-// Route::get('/book6',[PagesController::class,'book6Disp']);
-// Route::get('/book7',[PagesController::class,'book7Disp']);
-// Route::get('/book8',[PagesController::class,'book8Disp']);
-// Route::get('/sign-in',[PagesController::class,'inAdmin']);
-// Route::get('/sign-up',[PagesController::class,'upAdmin']);
-// Route::get('/Buku',[PagesController::class,'BukuAdmin']);
 
 
 
@@ -79,19 +66,6 @@ Route::group(['middleware' => 'auth'], function() {
         Route::get('detailProduct/{id}',[BukuController::class,'detail']);
         Route::get('/form/{id}',[BukuController::class,'checkout']);
         Route::post('/customer-buy',[TransaksiController::class,'customerBuy']);
-        // Route::get('/invoice/{id}',[TransaksiController::class,'invoice']);
+        Route::get('/invoice/{id}',[TransaksiController::class,'invoice']);
     });
 });
-
-
-// Route::get('/login', function () {
-    //     return view('login');
-    // });
-
-// Route::get('/register', function () {
-//     return view('register');
-// });
-
-// Route::get('/index', function () {
-//     return view('index');
-// });

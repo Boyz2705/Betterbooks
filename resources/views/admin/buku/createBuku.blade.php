@@ -365,7 +365,7 @@
                         </div>
                         <div class="mb-3">
                           <label for="harga" class="form-label">Harga</label>
-                          <input type="text" class="form-control" name="harga">
+                          <input type="number" step='0.01' class="form-control" name="harga">
                         </div>
                         <div class="mb-3">
                           <label for="image" class="form-label">Gambar</label>
